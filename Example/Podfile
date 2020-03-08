@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'ODScrollView_Example' do
+  pod 'ODScrollView', :path => '../'
+
+  target 'ODScrollView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
