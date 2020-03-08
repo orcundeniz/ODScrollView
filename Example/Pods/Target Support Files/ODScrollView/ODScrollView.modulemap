@@ -1,0 +1,6 @@
+framework module ODScrollView {
+  umbrella header "ODScrollView-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'ODScrollView'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of ODScrollView.'
+  s.summary          = 'ODScrollView is a framework that moves editable text areas like UITextField and UITextView vertically depending on keyboard visibility.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,21 +17,20 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+  s.description      = 'One of the most common situations while developing an iOS application is that is getting input from the user with UIViews that conform UITextInput protocol such as UITextField and UITextView on many screens, primarily login, registration and form screens. In these cases, we often encounter the overlap of the this UIViews with the keyboard. ODScrollView is a UIScrollView that automatically detects this UIViews and moves them according to the given settings. Besides that it has lots of other features and is developer friendly!'
 
-  s.homepage         = 'https://github.com/orcundeniz@windowslive.com/ODScrollView'
+  s.homepage         = 'https://github.com/orcundeniz/ODScrollView'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'orcundeniz@windowslive.com' => 'orcun.d@outlook.com' }
-  s.source           = { :git => 'https://github.com/orcundeniz@windowslive.com/ODScrollView.git', :tag => s.version.to_s }
+  s.author           = { 'Orçun Deniz' => 'deniz.orcun@outlook.com' }
+  s.source           = { :git => 'https://github.com/orcundeniz/ODScrollView.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '12.0'
+  s.swift_version = '5.0'
 
   s.source_files = 'ODScrollView/Classes/**/*'
-  
+  s.frameworks = 'UIKit'
   # s.resource_bundles = {
   #   'ODScrollView' => ['ODScrollView/Assets/*.png']
   # }

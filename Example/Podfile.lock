@@ -1,0 +1,16 @@
+PODS:
+  - ODScrollView (0.1.0)
+
+DEPENDENCIES:
+  - ODScrollView (from `../`)
+
+EXTERNAL SOURCES:
+  ODScrollView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ODScrollView: aff2bc8a0c520fd5f5113c0556f8d35af3a86d22
+
+PODFILE CHECKSUM: dc8f04f6de749f38d5b5bf1072a492ea8b70d5f3
+
+COCOAPODS: 1.9.0
