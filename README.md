@@ -5,23 +5,23 @@ ODScrollView is a framework that automatically moves editable text areas like UI
  
  ## Features
  * Automatically moves first responder UIViews that adopt the UITextInput protocol up/down when the keyboard appears/disappears, e.g., UITextField, UITextView, UISearchTextField or any custom UIView that adopts UITextInput protocol. 
-     * Note that if UITextInput's frame does NOT fits the remaining area between ODScrollView and keyboard, then ODScrollView adjusts UITextInput based on cursor position instead of frame. In such cases, "trackTextInputCursor" feature can be used. [Example](https://github.com/orcundeniz/ODScrollView/blob/master/GIFs/ExamplesForSettings.md#alwaysallbottomtrackcursor
+     * Note that if UITextInput's frame does NOT fits the remaining area between ODScrollView and keyboard, then ODScrollView adjusts UITextInput based on cursor position instead of frame. In such cases, "trackTextInputCursor" feature can be used. [Example](https://github.com/orcundeniz/ODScrollView/blob/master/docs/GIFs/ExamplesForSettings.md#alwaysallbottomtrackcursor
 )
  
  * Adjustment margin can be applied for each UITextInput seperately for .Top and .Bottom adjustment direction setting. 20 CGFloat by default.
 
  * Adjustment can be enabled/disabled for each UITextInput seperately. true by default.
 
- * Adjustment directon - .Top, .Center, .Bottom - can be applied for each UITextInput seperately. .Bottom by default. [Example](https://github.com/orcundeniz/ODScrollView/blob/master/GIFs/ExamplesForSettings.md#alwaysbottomuitextviewsandcenteruitextfieldsandrest
+ * Adjustment directon - .Top, .Center, .Bottom - can be applied for each UITextInput seperately. .Bottom by default. [Example](https://github.com/orcundeniz/ODScrollView/blob/master/docs/GIFs/ExamplesForSettings.md#alwaysbottomuitextviewsandcenteruitextfieldsandrest
 )
   
  * Adjustment options determines how ODScrollView adjusts. .Always by default.
-     * .Always : ODScrollView always adjusts the UITextInput which is placed anywhere in the ODScrollView regardless UITextInput overlaps or not with shown keyboard. [Example](https://github.com/orcundeniz/ODScrollView/blob/master/GIFs/ExamplesForSettings.md#alwaysallbottom
+     * .Always : ODScrollView always adjusts the UITextInput which is placed anywhere in the ODScrollView regardless UITextInput overlaps or not with shown keyboard. [Example](https://github.com/orcundeniz/ODScrollView/blob/master/docs/GIFs/ExamplesForSettings.md#alwaysallbottom
 )
-     * .IfNeeded : ODScrollView only adjusts the UITextInput if it overlaps with the shown keyboard. [Example](https://github.com/orcundeniz/ODScrollView/blob/master/GIFs/ExamplesForSettings.md#ifneededallcenter
+     * .IfNeeded : ODScrollView only adjusts the UITextInput if it overlaps with the shown keyboard. [Example](https://github.com/orcundeniz/ODScrollView/blob/master/docs/GIFs/ExamplesForSettings.md#ifneededallcenter
 )
 
- * Besides UIScrollView.keyboardDismissModes, the keyboard can be dismissed by tapping a UIView which is provided by ODScrollViewDelegate. After the keyboard is dismissed, ODScrollView can return its original position. nil and false by default. [Example](https://github.com/orcundeniz/ODScrollView/blob/master/GIFs/ExamplesForSettings.md#alwaysallbottomtrackcursor
+ * Besides UIScrollView.keyboardDismissModes, the keyboard can be dismissed by tapping a UIView which is provided by ODScrollViewDelegate. After the keyboard is dismissed, ODScrollView can return its original position. nil and false by default. [Example](https://github.com/orcundeniz/ODScrollView/blob/master/docs/GIFs/ExamplesForSettings.md#alwaysallbottomtrackcursor
 )
  
  ## Examples
@@ -41,7 +41,7 @@ ODScrollView is a framework that automatically moves editable text areas like UI
   </tr>
 </table>
  
- [Another Examples](https://github.com/orcundeniz/ODScrollView/blob/master/GIFs/ExamplesForSettings.md)
+ [Another Examples](https://github.com/orcundeniz/ODScrollView/blob/master/docs/GIFs/ExamplesForSettings.md)
  
   ## Requirements
   
