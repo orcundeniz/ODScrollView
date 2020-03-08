@@ -1,5 +1,5 @@
 # ODScrollView
-[![Generic badge](https://img.shields.io/badge/platform-iOS-green.svg)](https://github.com/orcundeniz/ODScrollView/) [![Generic badge](https://img.shields.io/badge/language-Swift-red.svg)](https://developer.apple.com/swift/) [![Generic badge](https://img.shields.io/badge/pod-todov1-blue.svg)](https://shields.io/) [![Generic badge](https://img.shields.io/badge/Carthage-todocompatible-green.svg)](https://shields.io/) [![Generic badge](https://img.shields.io/badge/license-MIT-gray.svg)](https://github.com/orcundeniz/ODScrollView/blob/master/LICENSE)
+[![Generic badge](https://img.shields.io/badge/platform-iOS-green.svg)](https://github.com/orcundeniz/ODScrollView/) [![Generic badge](https://img.shields.io/badge/language-Swift-red.svg)](https://developer.apple.com/swift/) [![Generic badge](https://img.shields.io/badge/pod-blue.svg)](https://cocoapods.org/pods/ODScrollView) [![Generic badge](https://img.shields.io/badge/Carthage-green.svg)](https://github.com/Carthage/Carthage) [![Generic badge](https://img.shields.io/badge/license-MIT-gray.svg)](https://github.com/orcundeniz/ODScrollView/blob/master/LICENSE)
 
 ODScrollView is a framework that automatically moves editable text areas like UITextField and UITextView vertically depending on keyboard visibility to offer better user experience.
  
@@ -27,7 +27,7 @@ ODScrollView is a framework that automatically moves editable text areas like UI
  ## Examples
 <table>
   <tr>
-    <td align="left"> <img src="GIFs/AlwaysAllBottom.gif" width="300" height="600"/> </td>
+    <td align="left"> <img src="docs/GIFs/AlwaysAllBottom.gif" width="300" height="600"/> </td>
     <td align="right"> 
      <p align="left">
          adjustmentMargin = 20 <br>
@@ -51,8 +51,36 @@ ODScrollView is a framework that automatically moves editable text areas like UI
 
   ## Installation
 
-   TODO POD CARTHAGE
- 
+  ### CocoaPods
+  
+   Check out [Get Started ](https://guides.cocoapods.org/using/getting-started.html) tab on cocoapods.org.
+
+   To use ODScrollView in your project add the following 'Podfile' to your project
+
+       use_frameworks!
+       target 'MY_APP' do
+         pod 'ODScrollView', '~> 0.1'
+       end
+
+   Then run:
+
+   pod install
+   
+   ### Carthage
+   
+   Check out the [Carthage](https://github.com/Carthage/Carthage) docs on how to add a install. The ODScrollView framework is already setup with shared schemes.
+
+   [Carthage Install](https://github.com/Carthage/Carthage#adding-frameworks-to-an-application)
+
+   You can install Carthage with [Homebrew](https://brew.sh) using the following command:
+
+        $ brew update
+        $ brew install carthage
+       
+   To integrate ODScrollView into your Xcode project using Carthage, specify it in your Cartfile:
+    
+        github "orcundeniz/ODScrollView" >= 0.1
+   
   ## Usage
 
  **1 -** First thing you need to do is setting up UIScrollView and its content view properly.
