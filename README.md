@@ -53,7 +53,7 @@ ODScrollView is a framework that automatically moves editable text areas like UI
 
   ### CocoaPods
   
-   Check out [Get Started ](https://guides.cocoapods.org/using/getting-started.html) tab on cocoapods.org.
+  Check out [Get Started ](https://guides.cocoapods.org/using/getting-started.html) tab on CocoaPods.
 
    To use ODScrollView in your project add the following 'Podfile' to your project
 
@@ -63,8 +63,8 @@ ODScrollView is a framework that automatically moves editable text areas like UI
        end
 
    Then run:
-
-   pod install
+        
+       pod install
    
    ### Carthage
    
