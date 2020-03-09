@@ -30,8 +30,8 @@ ODScrollView is a framework that automatically moves editable text areas like UI
     <td align="left"> <img src="docs/GIFs/AlwaysAllBottom.gif" width="300" height="600"/> </td>
     <td align="right"> 
      <p align="left">
-         adjustmentMargin = 20 <br>
-         adjustmentEnabled = true <br>
+         adjustmentMargin = 20 for all UITextInputs <br>
+         adjustmentEnabled = true for all UITextInputs <br>
          adjustmentDirection = .Bottom for all UITextInputs <br>
          adjustmentOption = .Always <br>
          hideKeyboardByTappingToView = ViewController.view <br>
