@@ -1,5 +1,5 @@
 # ODScrollView
-[![Generic badge](https://img.shields.io/badge/Platform-iOS-green.svg)](https://github.com/orcundeniz/ODScrollView/) [![Generic badge](https://img.shields.io/badge/Language-Swift-red.svg)](https://developer.apple.com/swift/) [![Generic badge](https://img.shields.io/badge/CocoaPods-0.1-blue.svg)](https://cocoapods.org/pods/ODScrollView) [![Generic badge](https://img.shields.io/badge/Carthage-compatible-green.svg)](https://github.com/Carthage/Carthage) [![Generic badge](https://img.shields.io/badge/License-MIT-gray.svg)](https://github.com/orcundeniz/ODScrollView/blob/master/LICENSE)
+[![Generic badge](https://img.shields.io/badge/Platform-iOS-green.svg)](https://github.com/orcundeniz/ODScrollView/) [![Generic badge](https://img.shields.io/badge/Language-Swift-red.svg)](https://developer.apple.com/swift/) [![Generic badge](https://img.shields.io/badge/CocoaPods-0.1.2-blue.svg)](https://cocoapods.org/pods/ODScrollView) [![Generic badge](https://img.shields.io/badge/Carthage-compatible-green.svg)](https://github.com/Carthage/Carthage) [![Generic badge](https://img.shields.io/badge/License-MIT-gray.svg)](https://github.com/orcundeniz/ODScrollView/blob/master/LICENSE)
 
 ODScrollView is a framework that automatically moves editable text areas like UITextField and UITextView vertically depending on keyboard visibility to offer better user experience.
  
@@ -27,7 +27,7 @@ ODScrollView is a framework that automatically moves editable text areas like UI
  ## Examples
 <table>
   <tr>
-    <td align="left"> <img src="docs/GIFs/AlwaysAllBottom.gif" width="300" height="600"/> </td>
+    <td align="left"> <img src="https://github.com/orcundeniz/ODScrollView/blob/master/docs/GIFs/ExamplesForSettings.md#alwaysallbottom" width="300" height="600"/> </td>
     <td align="right"> 
      <p align="left">
          adjustmentMargin = 20 for all UITextInputs <br>
