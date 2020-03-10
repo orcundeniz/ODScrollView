@@ -58,14 +58,14 @@ ODScrollView is a framework that automatically moves editable text areas like UI
 
    To use ODScrollView in your project add the following 'Podfile' to your project
 
-       use_frameworks!
-       target 'MY_APP' do
-         pod 'ODScrollView', '~> 0.1'
-       end
+    use_frameworks!
+    target 'MY_APP' do
+      pod 'ODScrollView', '~> 0.1'
+    end
 
    Then run:
         
-       pod install
+    pod install
    
    ### Carthage
    
@@ -75,12 +75,12 @@ ODScrollView is a framework that automatically moves editable text areas like UI
 
    You can install Carthage with [Homebrew](https://brew.sh) using the following command:
 
-        $ brew update
-        $ brew install carthage
+    $ brew update
+    $ brew install carthage
        
    To integrate ODScrollView into your Xcode project using Carthage, specify it in your Cartfile:
     
-        github "orcundeniz/ODScrollView" >= 0.1
+    github "orcundeniz/ODScrollView" >= 0.1
    
   ## Usage
 
@@ -109,134 +109,134 @@ ODScrollView is a framework that automatically moves editable text areas like UI
  **4 -** Call the following methods inside ViewDidLoad() on ViewController:
  
 ```swift
-       override func viewDidLoad() {
-           super.viewDidLoad()
+override func viewDidLoad() {
+    super.viewDidLoad()
 
-           //ODScrollView setup
-           scrollView.registerContentView(contentView)
-           scrollView.odScrollViewDelegate = self
-       }  
+    //ODScrollView setup
+    scrollView.registerContentView(contentView)
+    scrollView.odScrollViewDelegate = self
+}  
 ```
 
 **5 -** Optional: You still can use UIScrollView's features:
 
 ```swift
-       override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        //ODScrollView setup
-        scrollView.registerContentView(contentView)
-        scrollView.odScrollViewDelegate = self
-        
-        // UIScrollView setup
-        scrollView.delegate = self // UIScrollView Delegate
-        scrollView.keyboardDismissMode = .onDrag // UIScrollView keyboardDismissMode. Default is .none.
-                
-        UITextView_inside_contentView.delegate = self
-       }
+override func viewDidLoad() {
+    super.viewDidLoad()
+
+    //ODScrollView setup
+    scrollView.registerContentView(contentView)
+    scrollView.odScrollViewDelegate = self
+
+    // UIScrollView setup
+    scrollView.delegate = self // UIScrollView Delegate
+    scrollView.keyboardDismissMode = .onDrag // UIScrollView keyboardDismissMode. Default is .none.
+
+    UITextView_inside_contentView.delegate = self
+}
  ```
  
  **6 -** Adopt ODScrollViewDelegate from ViewController and decide ODScrollView options:
 
 ```swift
-       extension ViewController: ODScrollViewDelegate {
+extension ViewController: ODScrollViewDelegate {
 
-           // MARK:- State Notifiers: are responsible for notifiying ViewController about what is going on while adjusting. You don't have to do anything if you don't need them.
+    // MARK:- State Notifiers: are responsible for notifiying ViewController about what is going on while adjusting. You don't have to do anything if you don't need them.
 
-           // Notifies when the keyboard showed.
-           func keyboardDidShow(by scrollView: ODScrollView) {}
+    // Notifies when the keyboard showed.
+    func keyboardDidShow(by scrollView: ODScrollView) {}
 
-           // Notifies before the UIScrollView adjustment.
-           func scrollAdjustmentWillBegin(by scrollView: ODScrollView) {}
+    // Notifies before the UIScrollView adjustment.
+    func scrollAdjustmentWillBegin(by scrollView: ODScrollView) {}
 
-           // Notifies after the UIScrollView adjustment.
-           func scrollAdjustmentDidEnd(by scrollView: ODScrollView) {}
+    // Notifies after the UIScrollView adjustment.
+    func scrollAdjustmentDidEnd(by scrollView: ODScrollView) {}
 
-           // Notifies when the keyboard hid.
-           func keyboardDidHide(by scrollView: ODScrollView) {}
+    // Notifies when the keyboard hid.
+    func keyboardDidHide(by scrollView: ODScrollView) {}
 
-           // MARK:- Adjustment Settings
+    // MARK:- Adjustment Settings
 
-           // Adjusts the distance between keyboard and firstResponder view.
-           func adjustmentMargin(for textInput: UITextInput, inside scrollView: ODScrollView) -> CGFloat {
-               if let textField = textInput as? UITextField, textField == self.UITextField_inside_contentView {
-                   return 20
-               } else {
-                   return 40
-               }
-           }
-           
-           
-           // Adjustment can be enabled/disabled for each UITextInput seperately.
-           func adjustmentEnabled(for textInput: UITextInput, inside scrollView: ODScrollView) -> Bool {
-               if let textField = textInput as? UITextField, textField == self.UITextField_inside_contentView {
-                   return true
-               } else {
-                   return false
-               }
-           }
+    // Adjusts the distance between keyboard and firstResponder view.
+    func adjustmentMargin(for textInput: UITextInput, inside scrollView: ODScrollView) -> CGFloat {
+        if let textField = textInput as? UITextField, textField == self.UITextField_inside_contentView {
+            return 20
+        } else {
+            return 40
+        }
+    }
 
 
-           //  Specifies adjustment direction for each UITextInput. It means that  some of UITextInputs inside ODScrollView can be adjusted to the bottom, while others can be adjusted to center or top.
-           func adjustmentDirection(selected textInput: UITextInput, inside scrollView: ODScrollView) -> AdjustmentDirection {
-               if let textField = textInput as? UITextField, textField == self.UITextField_inside_contentView {
-                   return .Bottom
-               } else {
-                   return .Center
-               }
-           }
+    // Adjustment can be enabled/disabled for each UITextInput seperately.
+    func adjustmentEnabled(for textInput: UITextInput, inside scrollView: ODScrollView) -> Bool {
+        if let textField = textInput as? UITextField, textField == self.UITextField_inside_contentView {
+            return true
+        } else {
+            return false
+        }
+    }
 
-           /**
-            - Always : ODScrollView always adjusts the UITextInput which is placed anywhere in the ODScrollView.
-            - IfNeeded : ODScrollView only adjusts the UITextInput if it overlaps with the shown keyboard.
-            */
-           func adjustmentOption(for scrollView: ODScrollView) -> AdjustmentOption {
-               .Always
-           }
 
-           // MARK: - Hiding Keyboard Settings
+    //  Specifies adjustment direction for each UITextInput. It means that  some of UITextInputs inside ODScrollView can be adjusted to the bottom, while others can be adjusted to center or top.
+    func adjustmentDirection(selected textInput: UITextInput, inside scrollView: ODScrollView) -> AdjustmentDirection {
+        if let textField = textInput as? UITextField, textField == self.UITextField_inside_contentView {
+            return .Bottom
+        } else {
+            return .Center
+        }
+    }
 
-           /**
-            Provides a view for tap gesture that hides keyboard.
+    /**
+     - Always : ODScrollView always adjusts the UITextInput which is placed anywhere in the ODScrollView.
+     - IfNeeded : ODScrollView only adjusts the UITextInput if it overlaps with the shown keyboard.
+     */
+    func adjustmentOption(for scrollView: ODScrollView) -> AdjustmentOption {
+        .Always
+    }
 
-            By default, keyboard can be dismissed by keyboardDismissMode of UIScrollView.
+    // MARK: - Hiding Keyboard Settings
 
-            keyboardDismissMode = .none
-            keyboardDismissMode = .onDrag
-            keyboardDismissMode = .interactive
+    /**
+     Provides a view for tap gesture that hides keyboard.
 
-            Beside above settings:
+     By default, keyboard can be dismissed by keyboardDismissMode of UIScrollView.
 
-            - Returning UIView from this, lets you to hide the keyboard by tapping the UIView you provide, and also be able to use isResettingAdjustmentEnabled(for scrollView: ODScrollView) setting.
+     keyboardDismissMode = .none
+     keyboardDismissMode = .onDrag
+     keyboardDismissMode = .interactive
 
-            - If you return nil instead of UIView object, It means that hiding the keyboard by tapping is disabled.
-            */
-           func hideKeyboardByTappingToView(for scrollView: ODScrollView) -> UIView? {
-               self.view
-           }
+     Beside above settings:
 
-           /**
-            Resets the scroll view offset - which is adjusted before - to beginning its position after keyboard hid by tapping to the provided UIView via hideKeyboardByTappingToView.
+     - Returning UIView from this, lets you to hide the keyboard by tapping the UIView you provide, and also be able to use isResettingAdjustmentEnabled(for scrollView: ODScrollView) setting.
 
-            ## IMPORTANT:
-            This feature requires a UIView that is provided by hideKeyboardByTappingToView().
-            */
-           func isResettingAdjustmentEnabled(for scrollView: ODScrollView) -> Bool {
-               true
-           }
-       }
+     - If you return nil instead of UIView object, It means that hiding the keyboard by tapping is disabled.
+     */
+    func hideKeyboardByTappingToView(for scrollView: ODScrollView) -> UIView? {
+        self.view
+    }
+
+    /**
+     Resets the scroll view offset - which is adjusted before - to beginning its position after keyboard hid by tapping to the provided UIView via hideKeyboardByTappingToView.
+
+     ## IMPORTANT:
+     This feature requires a UIView that is provided by hideKeyboardByTappingToView().
+     */
+    func isResettingAdjustmentEnabled(for scrollView: ODScrollView) -> Bool {
+        true
+    }
+}
 ```
  
  **7 -** Optional: You can adjust the ODScrollView when the cursor overlaps with keyboard while typing in multiline UITextInput. trackTextInputCursor(for UITextInput) must be called by UITextInput functions that is fired while typing.
  
  ```swift
-         /**
-         ## IMPORTANT:
-         This feature is not going to work unless textView is subView of _ODScrollView
-         */
-         func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
-                 _ODScrollView.trackTextInputCursor(for textView)
-                 return true
-         }
+/**
+## IMPORTANT:
+This feature is not going to work unless textView is subView of _ODScrollView
+*/
+func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
+        _ODScrollView.trackTextInputCursor(for textView)
+        return true
+}
 ```
 
