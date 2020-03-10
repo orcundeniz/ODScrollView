@@ -2,14 +2,11 @@
 # * https://www.objc.io/issues/6-build-tools/travis-ci/
 # * https://github.com/supermarin/xcpretty#usage
 
-language: objective-c
-
-osx_image: xcode11.1
-env:
-  matrix:
-    - TEST_SDK=iphonesimulator13.3 OS=13.3 NAME='iPhone 11 Pro Max'
-    - TEST_SDK=iphonesimulator13.3 OS=13.3 NAME='iPhone 8 Plus'
-
-script:
-  - set -o pipefail && xcodebuild test -enableCodeCoverage YES -workspace Example/ODScrollView.xcworkspace -scheme ODScrollView-Example -sdk $TEST_SDK -destination "platform=iOS Simulator,OS=$OS,name=$NAME" ONLY_ACTIVE_ARCH=NO
-- pod lib lint
+language: swift
+osx_image: xcode11.3
+xcode_workspace: ODScrollView.xcworkspace
+xcode_scheme: ODScrollView
+xcode_destination: platform=iOS Simulator,OS=13.3,name=iPhone X
+before_install:
+- cd Example
+- pod install
