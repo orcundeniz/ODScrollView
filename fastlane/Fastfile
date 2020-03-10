@@ -1,10 +1,8 @@
 default_platform(:ios)
 
-podspecName = "ODScrollView.podspec"
+update_fastlane
 
 platform :ios do
-
-  update_fastlane
 
   desc "Release a new version with a patch bump_type"
   lane :patch do
@@ -22,6 +20,7 @@ platform :ios do
   end
 
   def release(type)
+	podspecName = "ODScrollView.podspec"
 	ensure_git_branch
 	ensure_git_status_clean
     	pod_lib_lint
