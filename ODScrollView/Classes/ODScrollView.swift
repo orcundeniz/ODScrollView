@@ -72,7 +72,7 @@ public final class ODScrollView: UIScrollView, KeyboardObserver {
     func keyboardDidHide() {
         resetAdjustedView()
         resetToInitialSettings()
-        self.odScrollViewDelegate?.keyboardDidHide(by: self)
+        odScrollViewDelegate?.keyboardDidHide(by: self)
         
         isKeyboardHidden = true
     }
@@ -129,7 +129,7 @@ public final class ODScrollView: UIScrollView, KeyboardObserver {
     }
     
     private func setupRenderer() {
-        self.renderer = ODScrollViewRenderer(self)
+        renderer = ODScrollViewRenderer(self)
     }
     
     private func setupAdjustmentDirectionSetting() {

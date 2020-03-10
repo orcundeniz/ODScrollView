@@ -13,7 +13,7 @@ final class ODScrollViewAdjustmentCalculator {
     
     static func isScrollViewAndKeyboardOverlapping(keyboardMinYGlobal: CGFloat,
                                                    scrollViewMaxYGlobal: CGFloat) -> Bool {
-        return scrollViewMaxYGlobal > keyboardMinYGlobal
+        scrollViewMaxYGlobal > keyboardMinYGlobal
     }
     
     static func isAdjustmentEnabled(inputViewMaxYGlobal: CGFloat? = nil,
@@ -24,9 +24,10 @@ final class ODScrollViewAdjustmentCalculator {
         case .always:
             return true
         case .ifNeeded:
-            guard let inputViewMaxYGlobal = inputViewMaxYGlobal, let keyboardMinYGlobal = keyboardMinYGlobal else {
-                return false
-            }
+            guard
+                let inputViewMaxYGlobal = inputViewMaxYGlobal,
+                let keyboardMinYGlobal = keyboardMinYGlobal
+            else { return false }
 
             // Adjustment is enabled if the inputView stays under keyboard.
             return inputViewMaxYGlobal >= keyboardMinYGlobal ? true : false
@@ -36,7 +37,7 @@ final class ODScrollViewAdjustmentCalculator {
     static func isInputViewFitsRemainingArea(inputViewHeight: CGFloat,
                                              remainingAreaMinYGlobal: CGFloat,
                                              remainingAreaMaxYGlobal: CGFloat) -> Bool {
-        return remainingAreaMaxYGlobal - remainingAreaMinYGlobal >= inputViewHeight
+        remainingAreaMaxYGlobal - remainingAreaMinYGlobal >= inputViewHeight
     }
     
     static func calculateContentOffset(adjustmentDirection: AdjustmentDirection,
@@ -45,7 +46,9 @@ final class ODScrollViewAdjustmentCalculator {
                                        remainingAreaMaxYGlobal: CGFloat,
                                        keyboardTopMarginFromAdjustedView: CGFloat) -> CGFloat {
         
-        if !ODScrollViewAdjustmentCalculator.isInputViewFitsRemainingArea(inputViewHeight: inputViewRectGlobal.height, remainingAreaMinYGlobal: remainingAreaMinYGlobal, remainingAreaMaxYGlobal: remainingAreaMaxYGlobal) {
+        if !ODScrollViewAdjustmentCalculator.isInputViewFitsRemainingArea(inputViewHeight: inputViewRectGlobal.height,
+                                                                          remainingAreaMinYGlobal: remainingAreaMinYGlobal,
+                                                                          remainingAreaMaxYGlobal: remainingAreaMaxYGlobal) {
             return 0
         }
         
@@ -62,6 +65,6 @@ final class ODScrollViewAdjustmentCalculator {
     
     static func isTextInputCursorTrackingEnabled(cursorMaxYGlobal: CGFloat,
                                                  remainingAreaMaxYGlobal: CGFloat) -> Bool {
-        return cursorMaxYGlobal > remainingAreaMaxYGlobal
+        cursorMaxYGlobal > remainingAreaMaxYGlobal
     }
 }

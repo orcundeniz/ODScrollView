@@ -180,9 +180,9 @@ extension ViewController: ODScrollViewDelegate {
     //  Specifies adjustment direction for each UITextInput. It means that  some of UITextInputs inside ODScrollView can be adjusted to the bottom, while others can be adjusted to center or top.
     func adjustmentDirection(selected textInput: UITextInput, inside scrollView: ODScrollView) -> AdjustmentDirection {
         if let textField = textInput as? UITextField, textField == self.UITextField_inside_contentView {
-            return .Bottom
+            return .bottom
         } else {
-            return .Center
+            return .center
         }
     }
 
@@ -236,7 +236,7 @@ This feature is not going to work unless textView is subView of _ODScrollView
 */
 func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
         _ODScrollView.trackTextInputCursor(for textView)
-        return true
+    return true
 }
 ```
 

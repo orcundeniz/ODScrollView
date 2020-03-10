@@ -19,6 +19,6 @@ postfix operator ^!=?
 extension Optional {
 
     static postfix func ^!=?(_ optional: Optional) -> Bool {
-        return (optional == nil) ? false : true
+        (optional == nil) ? false : true
     }
 }

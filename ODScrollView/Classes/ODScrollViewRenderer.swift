@@ -43,7 +43,10 @@ final class ODScrollViewRenderer {
         
         // Prepare variables
 
-        guard let scrollView = scrollView else { return }
+        guard
+            let scrollView = scrollView,
+            let scrollViewMinYGlobal = scrollView.superview?.convert(scrollView.frame, to: nil).minY
+        else { return }
 
         if isKeyboardHidden { // You can set another UITextInputs as firstResponder without hiding keyboard. This lets you to reset its very first position
             beforeAdjustmentContentOffsetY = scrollView.contentOffset.y // store it to reset
@@ -51,7 +54,6 @@ final class ODScrollViewRenderer {
         
         var totalContentOffset = scrollView.contentOffset.y
 
-        guard let scrollViewMinYGlobal = scrollView.superview?.convert(scrollView.frame, to: nil).minY else { return }
         let scrollViewMaxYGlobal = scrollViewMinYGlobal + scrollView.frame.height
         let keyboardMinYGlobal = UIScreen.main.bounds.height - keyboardHeight
         let isScrollViewAndKeyboardOverlapping = ODScrollViewAdjustmentCalculator.isScrollViewAndKeyboardOverlapping(keyboardMinYGlobal: keyboardMinYGlobal, scrollViewMaxYGlobal: scrollViewMaxYGlobal)
