@@ -6,7 +6,7 @@ language: swift
 osx_image: xcode11.3
 xcode_workspace: ODScrollView.xcworkspace
 xcode_scheme: ODScrollView-Example
-xcode_destination: platform=iOS Simulator,OS=13.3,name=iPhone X
+xcode_destination: platform=iOS Simulator,OS=13.3,name=iPhone 11 Pro Max
 before_install:
 - gem install cocoapods
 - cd Example
