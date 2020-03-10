@@ -8,5 +8,6 @@ xcode_workspace: ODScrollView.xcworkspace
 xcode_scheme: ODScrollView
 xcode_destination: platform=iOS Simulator,OS=13.3,name=iPhone X
 before_install:
+- gem install cocoapods
 - cd Example
 - pod install
