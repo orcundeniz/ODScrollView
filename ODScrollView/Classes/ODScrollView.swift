@@ -35,12 +35,14 @@ public final class ODScrollView: UIScrollView, KeyboardObserver {
         
         odScrollViewDelegate?.keyboardDidShow(by: self)
 
-        guard let contentView = scrollContentView else {
+        guard
+            let contentView = scrollContentView,
+            let renderer = renderer
+        else {
             assertionFailure("contentView is nil! You have to call ODScrollView.registerContentView")
             return
         }
         
-        guard let renderer = renderer else { return }
 
         // Check whether firstResponder UITextInput object is inside scrollContentView or not.
         
