@@ -8,8 +8,15 @@
 
 import Foundation
 
+/// Default value is `.bottom`
 public enum AdjustmentDirection {
-    case Top
-    case Center
-    case Bottom // Default
+
+    ///
+    case top
+
+    ///
+    case center
+
+    ///
+    case bottom
 }

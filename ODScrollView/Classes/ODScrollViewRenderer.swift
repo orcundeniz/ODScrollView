@@ -10,8 +10,9 @@ import Foundation
 import UIKit
 
 final class ODScrollViewRenderer {
-    
-    private var beforeAdjustmentContentOffsetY: CGFloat = 0 // It's using for resetting the adjusted view.
+
+    /// It's using for resetting the adjusted view.
+    private var beforeAdjustmentContentOffsetY: CGFloat = 0
     private var keyboardHeight: CGFloat = 0
 
     private weak var scrollView: ODScrollView?
@@ -151,8 +152,10 @@ final class ODScrollViewRenderer {
     
     private func adjustView(to offset: CGFloat) {
         DispatchQueue.main.async { [weak self] in
-            guard let self = self else { return }
-            guard let scrollView = self.scrollView else { return }
+            guard
+                let self = self,
+                let scrollView = self.scrollView
+            else { return }
             
             scrollView.setContentOffset(CGPoint(x: 0, y: offset), animated: true)
         }

@@ -53,11 +53,11 @@ extension MainViewController: ODScrollViewDelegate {
     }
     
     func adjustmentDirection(for textInput: UITextInput, inside scrollView: ODScrollView) -> AdjustmentDirection {
-        .Bottom
+        .bottom
     }
     
     func adjustmentOption(for scrollView: ODScrollView) -> AdjustmentOption {
-        .Always
+        .always
     }
     
     func hideKeyboardByTappingToView(for scrollView: ODScrollView) -> UIView? {

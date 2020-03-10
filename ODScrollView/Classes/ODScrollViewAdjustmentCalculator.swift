@@ -16,16 +16,20 @@ final class ODScrollViewAdjustmentCalculator {
         return scrollViewMaxYGlobal > keyboardMinYGlobal
     }
     
-    static func isAdjustmentEnable(inputViewMaxYGlobal: CGFloat? = nil, keyboardMinYGlobal: CGFloat? = nil, adjustmentOption: AdjustmentOption) -> Bool {
+    static func isAdjustmentEnabled(inputViewMaxYGlobal: CGFloat? = nil,
+                                    keyboardMinYGlobal: CGFloat? = nil,
+                                    adjustmentOption: AdjustmentOption) -> Bool {
+
         switch adjustmentOption {
-        case .Always:
+        case .always:
             return true
-        case .IfNeeded:
+        case .ifNeeded:
             guard let inputViewMaxYGlobal = inputViewMaxYGlobal, let keyboardMinYGlobal = keyboardMinYGlobal else {
                 return false
             }
 
-            return inputViewMaxYGlobal >= keyboardMinYGlobal ? true : false // Adjustment is enabled if the inputView stays under keyboard.
+            // Adjustment is enabled if the inputView stays under keyboard.
+            return inputViewMaxYGlobal >= keyboardMinYGlobal ? true : false
         }
     }
     
@@ -46,18 +50,18 @@ final class ODScrollViewAdjustmentCalculator {
         }
         
         switch adjustmentDirection {
-        case .Top:
+        case .top:
             return inputViewRectGlobal.minY - remainingAreaMinYGlobal - keyboardTopMarginFromAdjustedView
-        case .Center:
+        case .center:
             let remainingAreaMidYGlobal = remainingAreaMinYGlobal + (remainingAreaMaxYGlobal - remainingAreaMinYGlobal) / 2
             return inputViewRectGlobal.midY - remainingAreaMidYGlobal
-        case .Bottom:
+        case .bottom:
             return inputViewRectGlobal.maxY - remainingAreaMaxYGlobal + keyboardTopMarginFromAdjustedView
         }
     }
     
-    static func isTextInputCursorTrackingEnable(cursorMaxYGlobal: CGFloat,
-                                                remainingAreaMaxYGlobal: CGFloat ) -> Bool {
+    static func isTextInputCursorTrackingEnabled(cursorMaxYGlobal: CGFloat,
+                                                 remainingAreaMaxYGlobal: CGFloat) -> Bool {
         return cursorMaxYGlobal > remainingAreaMaxYGlobal
     }
 }

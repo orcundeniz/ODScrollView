@@ -33,7 +33,8 @@ class ODScrollViewAdjustmentCalculatorTests: XCTestCase {
   
         var inputViewRectGlobal: CGRect = CGRect.zero
         
-        init(position ODScrollViewAndKeyboardPositionSetting: ODScrollViewAndKeyboardRelationSettingEnum? = nil, inputFrame inputViewFrameSetting: InputViewFrameSettingEnum? = nil) {
+        init(position ODScrollViewAndKeyboardPositionSetting: ODScrollViewAndKeyboardRelationSettingEnum? = nil,
+             inputFrame inputViewFrameSetting: InputViewFrameSettingEnum? = nil) {
             
             setupUIElements()
             switch (ODScrollViewAndKeyboardPositionSetting, inputViewFrameSetting) {
@@ -68,7 +69,6 @@ class ODScrollViewAdjustmentCalculatorTests: XCTestCase {
                 
             default:
                 assertionFailure("Something went wrong")
-                
             }
         }
         
@@ -97,24 +97,15 @@ class ODScrollViewAdjustmentCalculatorTests: XCTestCase {
             inputViewRectGlobal = CGRect(x: 0, y: 0, width: 100, height: inputNotFittedHeight)
         }
     }
-        
 
-
-    override func setUp() {
-        
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
 
     // MARK: - isScrollViewAndKeyboardOverlapping
     func testScrollViewAndKeyboardOverlapping() {
  
         let setting = ODScrollViewCalculatorSetting(position: .overlapping)
         
-        let res = ODScrollViewAdjustmentCalculator.isScrollViewAndKeyboardOverlapping(keyboardMinYGlobal: setting.keyboardMinYGlobal, scrollViewMaxYGlobal: setting.scrollViewMaxYGlobal)
+        let res = ODScrollViewAdjustmentCalculator.isScrollViewAndKeyboardOverlapping(keyboardMinYGlobal: setting.keyboardMinYGlobal,
+                                                                                      scrollViewMaxYGlobal: setting.scrollViewMaxYGlobal)
         
         XCTAssertEqual(res, true)
 
@@ -124,7 +115,8 @@ class ODScrollViewAdjustmentCalculatorTests: XCTestCase {
         
         let setting = ODScrollViewCalculatorSetting(position: .notOverlapping)
         
-        let res = ODScrollViewAdjustmentCalculator.isScrollViewAndKeyboardOverlapping(keyboardMinYGlobal: setting.keyboardMinYGlobal, scrollViewMaxYGlobal: setting.scrollViewMaxYGlobal)
+        let res = ODScrollViewAdjustmentCalculator.isScrollViewAndKeyboardOverlapping(keyboardMinYGlobal: setting.keyboardMinYGlobal,
+                                                                                      scrollViewMaxYGlobal: setting.scrollViewMaxYGlobal)
         
         XCTAssertEqual(res, false)
 
@@ -133,7 +125,7 @@ class ODScrollViewAdjustmentCalculatorTests: XCTestCase {
     // MARK: - isAdjustmentEnable
     func testIsAdjustmentEnableAlways() {
         
-        let res = ODScrollViewAdjustmentCalculator.isAdjustmentEnable(adjustmentOption: .Always)
+        let res = ODScrollViewAdjustmentCalculator.isAdjustmentEnabled(adjustmentOption: .always)
         
         XCTAssertEqual(res, true)
     }
@@ -143,7 +135,9 @@ class ODScrollViewAdjustmentCalculatorTests: XCTestCase {
         var setting = ODScrollViewCalculatorSetting(position: .overlapping, inputFrame: .fit)
         setting.inputViewRectGlobal = CGRect(x: 0, y: 0, width: 100, height: setting.keyboardMinYGlobal + 1)
         
-        let res = ODScrollViewAdjustmentCalculator.isAdjustmentEnable(inputViewMaxYGlobal: setting.inputViewRectGlobal.maxY, keyboardMinYGlobal: setting.keyboardMinYGlobal, adjustmentOption: .IfNeeded)
+        let res = ODScrollViewAdjustmentCalculator.isAdjustmentEnabled(inputViewMaxYGlobal: setting.inputViewRectGlobal.maxY,
+                                                                       keyboardMinYGlobal: setting.keyboardMinYGlobal,
+                                                                       adjustmentOption: .ifNeeded)
         
         XCTAssertEqual(res, true)
     }
@@ -153,15 +147,20 @@ class ODScrollViewAdjustmentCalculatorTests: XCTestCase {
         var setting = ODScrollViewCalculatorSetting(position: .overlapping, inputFrame: .fit)
         setting.inputViewRectGlobal = CGRect(x: 0, y: 0, width: 100, height: setting.keyboardMinYGlobal - 1)
         
-        let res = ODScrollViewAdjustmentCalculator.isAdjustmentEnable(inputViewMaxYGlobal: setting.inputViewRectGlobal.maxY, keyboardMinYGlobal: setting.keyboardMinYGlobal, adjustmentOption: .IfNeeded)
+        let res = ODScrollViewAdjustmentCalculator.isAdjustmentEnabled(inputViewMaxYGlobal: setting.inputViewRectGlobal.maxY,
+                                                                       keyboardMinYGlobal: setting.keyboardMinYGlobal,
+                                                                       adjustmentOption: .ifNeeded)
         
         XCTAssertEqual(res, false)
     }
+
     func testIsAdjustmentEnableIfNeededOverlappingAndNotFit() {
         
         let setting = ODScrollViewCalculatorSetting(position: .overlapping, inputFrame: .notFit)
 
-        let res = ODScrollViewAdjustmentCalculator.isAdjustmentEnable(inputViewMaxYGlobal: setting.inputViewRectGlobal.maxY, keyboardMinYGlobal: setting.keyboardMinYGlobal, adjustmentOption: .IfNeeded)
+        let res = ODScrollViewAdjustmentCalculator.isAdjustmentEnabled(inputViewMaxYGlobal: setting.inputViewRectGlobal.maxY,
+                                                                       keyboardMinYGlobal: setting.keyboardMinYGlobal,
+                                                                       adjustmentOption: .ifNeeded)
         
         XCTAssertEqual(res, true)
     }
@@ -170,14 +169,16 @@ class ODScrollViewAdjustmentCalculatorTests: XCTestCase {
         
         let setting = ODScrollViewCalculatorSetting(position: .notOverlapping)
 
-        let res = ODScrollViewAdjustmentCalculator.isAdjustmentEnable(inputViewMaxYGlobal: setting.inputViewRectGlobal.maxY, keyboardMinYGlobal: setting.keyboardMinYGlobal, adjustmentOption: .IfNeeded)
+        let res = ODScrollViewAdjustmentCalculator.isAdjustmentEnabled(inputViewMaxYGlobal: setting.inputViewRectGlobal.maxY,
+                                                                       keyboardMinYGlobal: setting.keyboardMinYGlobal,
+                                                                       adjustmentOption: .ifNeeded)
         
         XCTAssertEqual(res, false)
     }
     
     func testIsAdjustmentEnableIfNeededMissingParameter() {
                 
-        let res = ODScrollViewAdjustmentCalculator.isAdjustmentEnable(adjustmentOption: .IfNeeded)
+        let res = ODScrollViewAdjustmentCalculator.isAdjustmentEnabled(adjustmentOption: .ifNeeded)
         
         XCTAssertEqual(res, false)
     }
@@ -187,7 +188,9 @@ class ODScrollViewAdjustmentCalculatorTests: XCTestCase {
                 
         let setting = ODScrollViewCalculatorSetting(inputFrame: .fit)
 
-        let res = ODScrollViewAdjustmentCalculator.isInputViewFitsRemainingArea(inputViewHeight: setting.inputViewRectGlobal.height, remainingAreaMinYGlobal: setting.scrollViewMinYGlobal, remainingAreaMaxYGlobal: setting.scrollViewMaxYGlobal)
+        let res = ODScrollViewAdjustmentCalculator.isInputViewFitsRemainingArea(inputViewHeight: setting.inputViewRectGlobal.height,
+                                                                                remainingAreaMinYGlobal: setting.scrollViewMinYGlobal,
+                                                                                remainingAreaMaxYGlobal: setting.scrollViewMaxYGlobal)
         
         XCTAssertEqual(res, true)
     }
@@ -196,7 +199,9 @@ class ODScrollViewAdjustmentCalculatorTests: XCTestCase {
                 
         let setting = ODScrollViewCalculatorSetting(inputFrame: .notFit)
 
-        let res = ODScrollViewAdjustmentCalculator.isInputViewFitsRemainingArea(inputViewHeight: setting.inputViewRectGlobal.height, remainingAreaMinYGlobal: setting.scrollViewMinYGlobal, remainingAreaMaxYGlobal: setting.scrollViewMaxYGlobal)
+        let res = ODScrollViewAdjustmentCalculator.isInputViewFitsRemainingArea(inputViewHeight: setting.inputViewRectGlobal.height,
+                                                                                remainingAreaMinYGlobal: setting.scrollViewMinYGlobal,
+                                                                                remainingAreaMaxYGlobal: setting.scrollViewMaxYGlobal)
         
         XCTAssertEqual(res, false)
     }
@@ -208,7 +213,8 @@ class ODScrollViewAdjustmentCalculatorTests: XCTestCase {
 
         let cursorMaxYGlobal = setting.inputViewRectGlobal.maxY
         
-        let res = ODScrollViewAdjustmentCalculator.isTextInputCursorTrackingEnable(cursorMaxYGlobal: cursorMaxYGlobal, remainingAreaMaxYGlobal: setting.scrollViewMaxYGlobal)
+        let res = ODScrollViewAdjustmentCalculator.isTextInputCursorTrackingEnabled(cursorMaxYGlobal: cursorMaxYGlobal,
+                                                                                    remainingAreaMaxYGlobal: setting.scrollViewMaxYGlobal)
         
         XCTAssertEqual(res, true)
     }
@@ -218,7 +224,8 @@ class ODScrollViewAdjustmentCalculatorTests: XCTestCase {
         let setting = ODScrollViewCalculatorSetting(inputFrame: .fit)
         let cursorMaxYGlobal = setting.inputViewRectGlobal.maxY
 
-        let res = ODScrollViewAdjustmentCalculator.isTextInputCursorTrackingEnable(cursorMaxYGlobal: cursorMaxYGlobal, remainingAreaMaxYGlobal: setting.scrollViewMaxYGlobal)
+        let res = ODScrollViewAdjustmentCalculator.isTextInputCursorTrackingEnabled(cursorMaxYGlobal: cursorMaxYGlobal,
+                                                                                    remainingAreaMaxYGlobal: setting.scrollViewMaxYGlobal)
         
         XCTAssertEqual(res, false)
     }
@@ -229,7 +236,11 @@ class ODScrollViewAdjustmentCalculatorTests: XCTestCase {
                 
         let setting = ODScrollViewCalculatorSetting(position: .overlapping, inputFrame: .fit)
 
-        let res = ODScrollViewAdjustmentCalculator.calculateContentOffset(adjustmentDirection: .Top, inputViewRectGlobal: setting.inputViewRectGlobal, remainingAreaMinYGlobal: setting.scrollViewMinYGlobal, remainingAreaMaxYGlobal: setting.scrollViewMaxYGlobal, keyboardTopMarginFromAdjustedView: setting.keyboardTopMarginFromAdjustedView)
+        let res = ODScrollViewAdjustmentCalculator.calculateContentOffset(adjustmentDirection: .top,
+                                                                          inputViewRectGlobal: setting.inputViewRectGlobal,
+                                                                          remainingAreaMinYGlobal: setting.scrollViewMinYGlobal,
+                                                                          remainingAreaMaxYGlobal: setting.scrollViewMaxYGlobal,
+                                                                          keyboardTopMarginFromAdjustedView: setting.keyboardTopMarginFromAdjustedView)
                 
         let correctResult = setting.inputViewRectGlobal.minY - setting.scrollViewMinYGlobal - setting.keyboardTopMarginFromAdjustedView
         XCTAssertEqual(res, correctResult)
@@ -239,7 +250,11 @@ class ODScrollViewAdjustmentCalculatorTests: XCTestCase {
             
         let setting = ODScrollViewCalculatorSetting(position: .overlapping, inputFrame: .notFit)
 
-        let res = ODScrollViewAdjustmentCalculator.calculateContentOffset(adjustmentDirection: .Top, inputViewRectGlobal: setting.inputViewRectGlobal, remainingAreaMinYGlobal: setting.scrollViewMinYGlobal, remainingAreaMaxYGlobal: setting.scrollViewMaxYGlobal, keyboardTopMarginFromAdjustedView: setting.keyboardTopMarginFromAdjustedView)
+        let res = ODScrollViewAdjustmentCalculator.calculateContentOffset(adjustmentDirection: .top,
+                                                                          inputViewRectGlobal: setting.inputViewRectGlobal,
+                                                                          remainingAreaMinYGlobal: setting.scrollViewMinYGlobal,
+                                                                          remainingAreaMaxYGlobal: setting.scrollViewMaxYGlobal,
+                                                                          keyboardTopMarginFromAdjustedView: setting.keyboardTopMarginFromAdjustedView)
                 
         XCTAssertEqual(res, 0)
     }
@@ -248,7 +263,11 @@ class ODScrollViewAdjustmentCalculatorTests: XCTestCase {
                 
         let setting = ODScrollViewCalculatorSetting(position: .notOverlapping, inputFrame: .fit)
 
-        let res = ODScrollViewAdjustmentCalculator.calculateContentOffset(adjustmentDirection: .Top, inputViewRectGlobal: setting.inputViewRectGlobal, remainingAreaMinYGlobal: setting.scrollViewMinYGlobal, remainingAreaMaxYGlobal: setting.scrollViewMaxYGlobal, keyboardTopMarginFromAdjustedView: setting.keyboardTopMarginFromAdjustedView)
+        let res = ODScrollViewAdjustmentCalculator.calculateContentOffset(adjustmentDirection: .top,
+                                                                          inputViewRectGlobal: setting.inputViewRectGlobal,
+                                                                          remainingAreaMinYGlobal: setting.scrollViewMinYGlobal,
+                                                                          remainingAreaMaxYGlobal: setting.scrollViewMaxYGlobal,
+                                                                          keyboardTopMarginFromAdjustedView: setting.keyboardTopMarginFromAdjustedView)
         
         let correctResult = setting.inputViewRectGlobal.minY - setting.scrollViewMinYGlobal - setting.keyboardTopMarginFromAdjustedView
         XCTAssertEqual(res, correctResult)
@@ -258,7 +277,11 @@ class ODScrollViewAdjustmentCalculatorTests: XCTestCase {
                 
         let setting = ODScrollViewCalculatorSetting(position: .notOverlapping, inputFrame: .notFit)
 
-         let res = ODScrollViewAdjustmentCalculator.calculateContentOffset(adjustmentDirection: .Top, inputViewRectGlobal: setting.inputViewRectGlobal, remainingAreaMinYGlobal: setting.scrollViewMinYGlobal, remainingAreaMaxYGlobal: setting.scrollViewMaxYGlobal, keyboardTopMarginFromAdjustedView: setting.keyboardTopMarginFromAdjustedView)
+         let res = ODScrollViewAdjustmentCalculator.calculateContentOffset(adjustmentDirection: .top,
+                                                                           inputViewRectGlobal: setting.inputViewRectGlobal,
+                                                                           remainingAreaMinYGlobal: setting.scrollViewMinYGlobal,
+                                                                           remainingAreaMaxYGlobal: setting.scrollViewMaxYGlobal,
+                                                                           keyboardTopMarginFromAdjustedView: setting.keyboardTopMarginFromAdjustedView)
         XCTAssertEqual(res, 0)
     }
     
@@ -267,7 +290,11 @@ class ODScrollViewAdjustmentCalculatorTests: XCTestCase {
                 
         let setting = ODScrollViewCalculatorSetting(position: .overlapping, inputFrame: .fit)
 
-        let res = ODScrollViewAdjustmentCalculator.calculateContentOffset(adjustmentDirection: .Center, inputViewRectGlobal: setting.inputViewRectGlobal, remainingAreaMinYGlobal: setting.scrollViewMinYGlobal, remainingAreaMaxYGlobal: setting.scrollViewMaxYGlobal, keyboardTopMarginFromAdjustedView: setting.keyboardTopMarginFromAdjustedView)
+        let res = ODScrollViewAdjustmentCalculator.calculateContentOffset(adjustmentDirection: .center,
+                                                                          inputViewRectGlobal: setting.inputViewRectGlobal,
+                                                                          remainingAreaMinYGlobal: setting.scrollViewMinYGlobal,
+                                                                          remainingAreaMaxYGlobal: setting.scrollViewMaxYGlobal,
+                                                                          keyboardTopMarginFromAdjustedView: setting.keyboardTopMarginFromAdjustedView)
         
         let remainingAreaMidYGlobal = setting.scrollViewMinYGlobal + (setting.scrollViewMaxYGlobal - setting.scrollViewMinYGlobal) / 2
         
@@ -279,7 +306,11 @@ class ODScrollViewAdjustmentCalculatorTests: XCTestCase {
             
         let setting = ODScrollViewCalculatorSetting(position: .overlapping, inputFrame: .notFit)
 
-        let res = ODScrollViewAdjustmentCalculator.calculateContentOffset(adjustmentDirection: .Center, inputViewRectGlobal: setting.inputViewRectGlobal, remainingAreaMinYGlobal: setting.scrollViewMinYGlobal, remainingAreaMaxYGlobal: setting.scrollViewMaxYGlobal, keyboardTopMarginFromAdjustedView: setting.keyboardTopMarginFromAdjustedView)
+        let res = ODScrollViewAdjustmentCalculator.calculateContentOffset(adjustmentDirection: .center,
+                                                                          inputViewRectGlobal: setting.inputViewRectGlobal,
+                                                                          remainingAreaMinYGlobal: setting.scrollViewMinYGlobal,
+                                                                          remainingAreaMaxYGlobal: setting.scrollViewMaxYGlobal,
+                                                                          keyboardTopMarginFromAdjustedView: setting.keyboardTopMarginFromAdjustedView)
         
         XCTAssertEqual(res, 0)
     }
@@ -288,7 +319,11 @@ class ODScrollViewAdjustmentCalculatorTests: XCTestCase {
                 
         let setting = ODScrollViewCalculatorSetting(position: .notOverlapping, inputFrame: .fit)
 
-        let res = ODScrollViewAdjustmentCalculator.calculateContentOffset(adjustmentDirection: .Center, inputViewRectGlobal: setting.inputViewRectGlobal, remainingAreaMinYGlobal: setting.scrollViewMinYGlobal, remainingAreaMaxYGlobal: setting.scrollViewMaxYGlobal, keyboardTopMarginFromAdjustedView: setting.keyboardTopMarginFromAdjustedView)
+        let res = ODScrollViewAdjustmentCalculator.calculateContentOffset(adjustmentDirection: .center,
+                                                                          inputViewRectGlobal: setting.inputViewRectGlobal,
+                                                                          remainingAreaMinYGlobal: setting.scrollViewMinYGlobal,
+                                                                          remainingAreaMaxYGlobal: setting.scrollViewMaxYGlobal,
+                                                                          keyboardTopMarginFromAdjustedView: setting.keyboardTopMarginFromAdjustedView)
         
         let remainingAreaMidYGlobal = setting.scrollViewMinYGlobal + (setting.scrollViewMaxYGlobal - setting.scrollViewMinYGlobal) / 2
         let correctResult = setting.inputViewRectGlobal.midY - remainingAreaMidYGlobal
@@ -299,7 +334,11 @@ class ODScrollViewAdjustmentCalculatorTests: XCTestCase {
                 
         let setting = ODScrollViewCalculatorSetting(position: .notOverlapping, inputFrame: .notFit)
 
-        let res = ODScrollViewAdjustmentCalculator.calculateContentOffset(adjustmentDirection: .Top, inputViewRectGlobal: setting.inputViewRectGlobal, remainingAreaMinYGlobal: setting.scrollViewMinYGlobal, remainingAreaMaxYGlobal: setting.scrollViewMaxYGlobal, keyboardTopMarginFromAdjustedView: setting.keyboardTopMarginFromAdjustedView)
+        let res = ODScrollViewAdjustmentCalculator.calculateContentOffset(adjustmentDirection: .top,
+                                                                          inputViewRectGlobal: setting.inputViewRectGlobal,
+                                                                          remainingAreaMinYGlobal: setting.scrollViewMinYGlobal,
+                                                                          remainingAreaMaxYGlobal: setting.scrollViewMaxYGlobal,
+                                                                          keyboardTopMarginFromAdjustedView: setting.keyboardTopMarginFromAdjustedView)
         
         XCTAssertEqual(res, 0)
     }
@@ -309,7 +348,11 @@ class ODScrollViewAdjustmentCalculatorTests: XCTestCase {
                 
         let setting = ODScrollViewCalculatorSetting(position: .overlapping, inputFrame: .fit)
 
-        let res = ODScrollViewAdjustmentCalculator.calculateContentOffset(adjustmentDirection: .Bottom, inputViewRectGlobal: setting.inputViewRectGlobal, remainingAreaMinYGlobal: setting.scrollViewMinYGlobal, remainingAreaMaxYGlobal: setting.scrollViewMaxYGlobal, keyboardTopMarginFromAdjustedView: setting.keyboardTopMarginFromAdjustedView)
+        let res = ODScrollViewAdjustmentCalculator.calculateContentOffset(adjustmentDirection: .bottom,
+                                                                          inputViewRectGlobal: setting.inputViewRectGlobal,
+                                                                          remainingAreaMinYGlobal: setting.scrollViewMinYGlobal,
+                                                                          remainingAreaMaxYGlobal: setting.scrollViewMaxYGlobal,
+                                                                          keyboardTopMarginFromAdjustedView: setting.keyboardTopMarginFromAdjustedView)
         
         let correctResult = setting.inputViewRectGlobal.maxY - setting.scrollViewMaxYGlobal + setting.keyboardTopMarginFromAdjustedView
         XCTAssertEqual(res, correctResult)
@@ -319,8 +362,11 @@ class ODScrollViewAdjustmentCalculatorTests: XCTestCase {
             
         let setting = ODScrollViewCalculatorSetting(position: .overlapping, inputFrame: .notFit)
 
-        let res = ODScrollViewAdjustmentCalculator.calculateContentOffset(adjustmentDirection: .Bottom, inputViewRectGlobal: setting.inputViewRectGlobal, remainingAreaMinYGlobal: setting.scrollViewMinYGlobal, remainingAreaMaxYGlobal: setting.scrollViewMaxYGlobal, keyboardTopMarginFromAdjustedView: setting.keyboardTopMarginFromAdjustedView)
-        
+        let res = ODScrollViewAdjustmentCalculator.calculateContentOffset(adjustmentDirection: .bottom,
+                                                                          inputViewRectGlobal: setting.inputViewRectGlobal,
+                                                                          remainingAreaMinYGlobal: setting.scrollViewMinYGlobal,
+                                                                          remainingAreaMaxYGlobal: setting.scrollViewMaxYGlobal,
+                                                                          keyboardTopMarginFromAdjustedView: setting.keyboardTopMarginFromAdjustedView)
                 
         XCTAssertEqual(res, 0)
     }
@@ -329,7 +375,11 @@ class ODScrollViewAdjustmentCalculatorTests: XCTestCase {
                 
         let setting = ODScrollViewCalculatorSetting(position: .notOverlapping, inputFrame: .fit)
 
-        let res = ODScrollViewAdjustmentCalculator.calculateContentOffset(adjustmentDirection: .Bottom, inputViewRectGlobal: setting.inputViewRectGlobal, remainingAreaMinYGlobal: setting.scrollViewMinYGlobal, remainingAreaMaxYGlobal: setting.scrollViewMaxYGlobal, keyboardTopMarginFromAdjustedView: setting.keyboardTopMarginFromAdjustedView)
+        let res = ODScrollViewAdjustmentCalculator.calculateContentOffset(adjustmentDirection: .bottom,
+                                                                          inputViewRectGlobal: setting.inputViewRectGlobal,
+                                                                          remainingAreaMinYGlobal: setting.scrollViewMinYGlobal,
+                                                                          remainingAreaMaxYGlobal: setting.scrollViewMaxYGlobal,
+                                                                          keyboardTopMarginFromAdjustedView: setting.keyboardTopMarginFromAdjustedView)
         
         let correctResult = setting.inputViewRectGlobal.maxY - setting.scrollViewMaxYGlobal + setting.keyboardTopMarginFromAdjustedView
         XCTAssertEqual(res, correctResult)
@@ -339,8 +389,11 @@ class ODScrollViewAdjustmentCalculatorTests: XCTestCase {
                 
         let setting = ODScrollViewCalculatorSetting(position: .notOverlapping, inputFrame: .notFit)
 
-        let res = ODScrollViewAdjustmentCalculator.calculateContentOffset(adjustmentDirection: .Top, inputViewRectGlobal: setting.inputViewRectGlobal, remainingAreaMinYGlobal: setting.scrollViewMinYGlobal, remainingAreaMaxYGlobal: setting.scrollViewMaxYGlobal, keyboardTopMarginFromAdjustedView: setting.keyboardTopMarginFromAdjustedView)
-        
+        let res = ODScrollViewAdjustmentCalculator.calculateContentOffset(adjustmentDirection: .top,
+                                                                          inputViewRectGlobal: setting.inputViewRectGlobal,
+                                                                          remainingAreaMinYGlobal: setting.scrollViewMinYGlobal,
+                                                                          remainingAreaMaxYGlobal: setting.scrollViewMaxYGlobal,
+                                                                          keyboardTopMarginFromAdjustedView: setting.keyboardTopMarginFromAdjustedView)
                 
         XCTAssertEqual(res, 0)
     }
