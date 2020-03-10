@@ -1,10 +1,10 @@
 default_platform(:ios)
 
-update_fastlane
-
-podspec_name = "ODScrollView.podspec"
-
 platform :ios do
+
+  update_fastlane
+
+  podspec_name = "ODScrollView.podspec"
 
   desc "Release a new version with a patch bump_type"
   lane :patch do
