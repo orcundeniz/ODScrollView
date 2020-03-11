@@ -151,21 +151,26 @@ extension ViewController: ODScrollViewDelegate {
 
     // MARK:- State Notifiers: are responsible for notifiying ViewController about what is going on while adjusting. You don't have to do anything if you don't need them.
 
+    // #Optional
     // Notifies when the keyboard showed.
     func keyboardDidShow(by scrollView: ODScrollView) {}
 
+    // #Optional
     // Notifies before the UIScrollView adjustment.
     func scrollAdjustmentWillBegin(by scrollView: ODScrollView) {}
 
+    // #Optional
     // Notifies after the UIScrollView adjustment.
     func scrollAdjustmentDidEnd(by scrollView: ODScrollView) {}
 
+    // #Optional
     // Notifies when the keyboard hid.
     func keyboardDidHide(by scrollView: ODScrollView) {}
 
     // MARK:- Adjustment Settings
 
-    // Adjusts the distance between keyboard and firstResponder view.
+    // #Optional
+    // Specifies the margin between UITextInput and ODScrollView's top or bottom constraint depending on AdjustmentDirection
     func adjustmentMargin(for textInput: UITextInput, inside scrollView: ODScrollView) -> CGFloat {
         if let textField = textInput as? UITextField, textField == self.UITextField_inside_contentView {
             return 20
@@ -174,8 +179,8 @@ extension ViewController: ODScrollViewDelegate {
         }
     }
 
-
-    // Adjustment can be enabled/disabled for each UITextInput seperately.
+    // #Optional
+    // Specifies that whether adjustment is enabled or not for each UITextInput seperately.
     func adjustmentEnabled(for textInput: UITextInput, inside scrollView: ODScrollView) -> Bool {
         if let textField = textInput as? UITextField, textField == self.UITextField_inside_contentView {
             return true
@@ -185,7 +190,7 @@ extension ViewController: ODScrollViewDelegate {
     }
 
 
-    //  Specifies adjustment direction for each UITextInput. It means that  some of UITextInputs inside ODScrollView can be adjusted to the bottom, while others can be adjusted to center or top.
+    // Specifies adjustment direction for each UITextInput. It means that  some of UITextInputs inside ODScrollView can be adjusted to the bottom, while others can be adjusted to center or top.
     func adjustmentDirection(selected textInput: UITextInput, inside scrollView: ODScrollView) -> AdjustmentDirection {
         if let textField = textInput as? UITextField, textField == self.UITextField_inside_contentView {
             return .bottom
@@ -205,6 +210,8 @@ extension ViewController: ODScrollViewDelegate {
     // MARK: - Hiding Keyboard Settings
 
     /**
+     #Optional
+     
      Provides a view for tap gesture that hides keyboard.
 
      By default, keyboard can be dismissed by keyboardDismissMode of UIScrollView.
@@ -224,6 +231,8 @@ extension ViewController: ODScrollViewDelegate {
     }
 
     /**
+     #Optional
+    
      Resets the scroll view offset - which is adjusted before - to beginning its position after keyboard hid by tapping to the provided UIView via hideKeyboardByTappingToView.
 
      ## IMPORTANT:
