@@ -84,7 +84,12 @@ ODScrollView is a framework that automatically moves editable text areas like UI
    
   ## Usage
 
- **1 -** First thing you need to do is setting up UIScrollView and its content view properly.
+ **1 -** First thing you need to do is setting up ODScrollView and its content view properly. Since ODScrollView is just a UIScrollView, you can implement ODScrollView same way you do for UIScrollView. It's up to you to create ODScrollView by using storyboard or programmatically. 
+ 
+ If you're creating ODScrollView programmatically, you can continue from step 4.
+ 
+ <details>
+  <summary>Suggested way to create UIScrollView in Storyboard</summary>
  
     - If you are using Content Layout Guide and Frame Layout Guide:
         1.1 - scrollView: Place UIScrollView anywhere you want to use.  
@@ -101,6 +106,9 @@ ODScrollView is a framework that automatically moves editable text areas like UI
         1.4 - Set contentView's width equal to scrollView's width.
         1.5 - Set contentView's height equal to scrollView's superview's height or set static height which is larger than scrollView's height.
         1.6 - Build your UI inside contentView.
+        
+</details>
+
  
  **2 -** Change the scrollView's class from UIScrollView to ODScrollView in the identity inspector on Storyboard.
  
