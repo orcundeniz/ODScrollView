@@ -15,37 +15,38 @@ protocol KeyboardObserver: class {
 extension KeyboardObserver {
   
     func addKeyboardObservers() {
+        NotificationCenter.addObserver(with: UIResponder.keyboardDidShowNotification) { [weak self] notification in
+            guard
+                let self = self,
+                let keyboardFrame = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue
+            else { return }
+            self.keyboardDidShow(with: keyboardFrame.height)
+        }
 
-        NotificationCenter.default.addObserver(
-            forName: UIResponder.keyboardDidShowNotification,
-            object: nil,
-            queue: nil,
-            using: { [weak self] notification in
-                guard let self = self else {return}
-                guard let keyboardFrame = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue else {
-                    return
-                }
-
-                self.keyboardDidShow(with: keyboardFrame.height)
-        })
-        
-        NotificationCenter.default.addObserver(
-            forName: UIResponder.keyboardDidHideNotification,
-            object: nil,
-            queue: nil,
-            using: { [weak self] _ in
-                self?.keyboardDidHide()
-        })
+        NotificationCenter.addObserver(with: UIResponder.keyboardDidHideNotification) { [weak self] _ in
+            self?.keyboardDidHide()
+        }
     }
     
     func removeKeyboardObservers() {
+        NotificationCenter.removeObserver(with: UIResponder.keyboardDidHideNotification, observer: self)
+        NotificationCenter.removeObserver(with: UIResponder.keyboardDidShowNotification, observer: self)
+    }
+}
+        
+private extension NotificationCenter {
+    static func addObserver(with notificationName: NSNotification.Name, using block: @escaping (Notification) -> Void) {
+        NotificationCenter.default.addObserver(
+            forName: notificationName,
+            object: nil,
+            queue: nil,
+            using: block)
+    }
+
+    static func removeObserver(with notificationName: NSNotification.Name, observer: KeyboardObserver) {
         NotificationCenter.default.removeObserver(
-            self,
-            name: UIResponder.keyboardDidHideNotification,
-            object: nil)
-        NotificationCenter.default.removeObserver(
-            self,
-            name: UIResponder.keyboardDidShowNotification,
+            observer,
+            name: notificationName,
             object: nil)
     }
 }

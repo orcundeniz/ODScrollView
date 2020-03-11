@@ -8,15 +8,12 @@
 
 import Foundation
 
+/// Default value is `.always`
 public enum AdjustmentOption {
-    
-    /**
-     ODScrollView always adjusts the UITextInput -firstResponder- which is placed anywhere in the ODScrollView.
-     */
-    case Always // Default
-    
-    /***
-     ODScrollView only adjusts the UITextInput  -firstResponder- if it overlaps with the keyboard.
-     */
-    case IfNeeded
+
+    /// ODScrollView always adjusts the UITextInput -firstResponder- which is placed anywhere in the ODScrollView.
+    case always
+
+    /// ODScrollView only adjusts the UITextInput  -firstResponder- if it overlaps with the keyboard.
+    case ifNeeded
 }

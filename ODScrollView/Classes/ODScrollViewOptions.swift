@@ -12,8 +12,8 @@ import UIKit
 struct ODScrollViewOptions {
     static var adjustmentMargin: CGFloat = 0
     static var adjustmentEnabled: Bool = true
-    static var adjustmentOption: AdjustmentOption = .Always
-    static var adjustmentDirection: AdjustmentDirection = .Bottom
+    static var adjustmentOption: AdjustmentOption = .always
+    static var adjustmentDirection: AdjustmentDirection = .bottom
     static var hideKeyboardByTappingToView: UIView?
     static var isResettingAdjustmentEnabled: Bool = false
 }
