@@ -95,6 +95,7 @@ public final class ODScrollView: UIScrollView, KeyboardObserver {
     deinit {
         removeKeyboardObservers()
     }
+    
     // MARK: - Helpers
     
     private func resetAdjustedView() {

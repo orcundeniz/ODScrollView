@@ -34,20 +34,6 @@ class TextCursorTrackingViewController: UIViewController {
 
 extension TextCursorTrackingViewController: ODScrollViewDelegate {
     
-    func keyboardDidShow(by scrollView: ODScrollView) {
-    }
-    
-    func scrollAdjustmentWillBegin(by scrollView: ODScrollView) {
-    }
-    
-    func scrollAdjustmentDidEnd(by scrollView: ODScrollView) {
-        
-    }
-    
-    func keyboardDidHide(by scrollView: ODScrollView) {
-        
-    }
-    
     func adjustmentMargin(for textInput: UITextInput, inside scrollView: ODScrollView) -> CGFloat {
         20
     }

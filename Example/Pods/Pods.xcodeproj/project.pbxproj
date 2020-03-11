@@ -8,23 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		0C67C1769452A4E1C4B678C4F7B23812 /* Pods-ODScrollView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 61A9593D4CC8B3C7D66B55EC1B433C37 /* Pods-ODScrollView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		14FCEE37270D66AA83805E2613739C38 /* Optional+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CDB4B8BCF05A57F188C733286EEF98 /* Optional+Extensions.swift */; };
-		1A3A2D1089852FBE2C8492AB34FFEB1E /* AdjustmentDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3142C57258138EB513E72EC03C4667D4 /* AdjustmentDirection.swift */; };
+		14FCEE37270D66AA83805E2613739C38 /* Optional+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E3B900C7E61E69158D431D96372935 /* Optional+Extensions.swift */; };
+		1A3A2D1089852FBE2C8492AB34FFEB1E /* AdjustmentDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B43EDE4C2FF5CE362A7E05953B63468 /* AdjustmentDirection.swift */; };
 		21908C2062E36075AFDE5B0A9BEECD53 /* Pods-ODScrollView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C2A7CC1306B3AAB510AAD1311EF020D7 /* Pods-ODScrollView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		36EF81DD73C067E412313B4711C00A20 /* AdjustmentOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10866C8963FE58A06D576AE6A733AA04 /* AdjustmentOption.swift */; };
-		391DA0740776D4FC785DEC3FF4D90447 /* ODScrollView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B6968C6271413EF85489C537F27628AF /* ODScrollView-dummy.m */; };
+		36EF81DD73C067E412313B4711C00A20 /* AdjustmentOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A85EC2485B87B63880A8A5527063038 /* AdjustmentOption.swift */; };
+		391DA0740776D4FC785DEC3FF4D90447 /* ODScrollView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 04736914A4A5F84BE97EC200B2709FAB /* ODScrollView-dummy.m */; };
 		4FA334AE351FB53708B83160F8726ED5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
-		7289BE6B8524EB1089C59A9E961D1379 /* ODScrollViewRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7661542CA8118D3A5382EFFDC9082F3B /* ODScrollViewRenderer.swift */; };
+		7289BE6B8524EB1089C59A9E961D1379 /* ODScrollViewRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0701F8C3FD7EF276E04461A55799FE12 /* ODScrollViewRenderer.swift */; };
 		73EE0307429830468EA11F03BE4ADDCE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
-		7805F78E9B00039E9DF10701F0F3E352 /* ODScrollViewOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B65D92B5735AFAF7FFE7D4DCE8F2F90 /* ODScrollViewOptions.swift */; };
+		7805F78E9B00039E9DF10701F0F3E352 /* ODScrollViewOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1789CEB6EB41E1B0E5163EAA7AC7380 /* ODScrollViewOptions.swift */; };
 		7B294A263ACC3D59B46ED519B37AB558 /* Pods-ODScrollView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F9930E31B9B6CD3824F9D6174AB22DE /* Pods-ODScrollView_Tests-dummy.m */; };
-		851B7F8D402AB1773AC8065A1A6BEF73 /* ODScrollViewAdjustmentCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C519BAB0D928CB9BA2C93E9624245987 /* ODScrollViewAdjustmentCalculator.swift */; };
+		851B7F8D402AB1773AC8065A1A6BEF73 /* ODScrollViewAdjustmentCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4353FE74757D6919FE6E0B3D12553771 /* ODScrollViewAdjustmentCalculator.swift */; };
 		854B960616474DC2CF1A9001327CDBD1 /* Pods-ODScrollView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F23BE8F199ED76DF6ED44A394CC183EE /* Pods-ODScrollView_Example-dummy.m */; };
-		A78D9783A74970A4F2B515094901BCC5 /* ODScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA58DC8DA31BA0A4E83DA5F377F922C9 /* ODScrollView.swift */; };
-		B4371971416DD7476984CDA41297C0FA /* KeyboardObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7425A594808488F4D93760D7460F420 /* KeyboardObserver.swift */; };
-		D57E4E54637EF8D25D52A58DF9CF3FB2 /* ODScrollViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBBEAE4F995298971B1EAB9F15D7B89 /* ODScrollViewDelegate.swift */; };
+		A78D9783A74970A4F2B515094901BCC5 /* ODScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194AB268119CD29181578A63456673A5 /* ODScrollView.swift */; };
+		B4371971416DD7476984CDA41297C0FA /* KeyboardObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB34DDFFB25C36FBA5E20F650A1D79D /* KeyboardObserver.swift */; };
+		D57E4E54637EF8D25D52A58DF9CF3FB2 /* ODScrollViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA6D612AD2127E1842363E90D09C22A /* ODScrollViewDelegate.swift */; };
 		EAE20FF4D2E33CF77556D3933B670E81 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
-		F5C805214CF4157F872F7DC11424F7B7 /* ODScrollView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FB39C9348CD4BB42475EAF2A54E90ABB /* ODScrollView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F5C805214CF4157F872F7DC11424F7B7 /* ODScrollView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D6A4121FFC8CC798648A9848C1FB9983 /* ODScrollView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA05B799007761B5D3017122CB45C2E7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 312B988EF117AE4DE76A268D970131FE /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,47 +47,54 @@
 
 /* Begin PBXFileReference section */
 		0148F08D3ED6DE3BED2A7BF1153D267B /* Pods-ODScrollView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ODScrollView_Example.modulemap"; sourceTree = "<group>"; };
+		04736914A4A5F84BE97EC200B2709FAB /* ODScrollView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ODScrollView-dummy.m"; sourceTree = "<group>"; };
+		0701F8C3FD7EF276E04461A55799FE12 /* ODScrollViewRenderer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ODScrollViewRenderer.swift; path = ODScrollView/Classes/ODScrollViewRenderer.swift; sourceTree = "<group>"; };
 		07A1E9437F361D6AE8299A8686799A6F /* Pods_ODScrollView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ODScrollView_Tests.framework; path = "Pods-ODScrollView_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		10866C8963FE58A06D576AE6A733AA04 /* AdjustmentOption.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AdjustmentOption.swift; path = ODScrollView/Classes/AdjustmentOption.swift; sourceTree = "<group>"; };
+		09F0E40491F044E35B8FD306BE24BFA9 /* AlwaysAllBottomTrackCursor.gif */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.gif; name = AlwaysAllBottomTrackCursor.gif; path = docs/GIFs/AlwaysAllBottomTrackCursor.gif; sourceTree = "<group>"; };
+		0A85EC2485B87B63880A8A5527063038 /* AdjustmentOption.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AdjustmentOption.swift; path = ODScrollView/Classes/AdjustmentOption.swift; sourceTree = "<group>"; };
+		0B43EDE4C2FF5CE362A7E05953B63468 /* AdjustmentDirection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AdjustmentDirection.swift; path = ODScrollView/Classes/AdjustmentDirection.swift; sourceTree = "<group>"; };
+		0FE9AD187F145D91B74DA5E831CB689C /* ExamplesForSettings.md */ = {isa = PBXFileReference; includeInIndex = 1; name = ExamplesForSettings.md; path = docs/GIFs/ExamplesForSettings.md; sourceTree = "<group>"; };
 		1148312882E72B93CC76033AB89F7467 /* Pods-ODScrollView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ODScrollView_Example.release.xcconfig"; sourceTree = "<group>"; };
+		194AB268119CD29181578A63456673A5 /* ODScrollView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ODScrollView.swift; path = ODScrollView/Classes/ODScrollView.swift; sourceTree = "<group>"; };
+		1A7EF55605A47018F0F11839C769BCC9 /* ODScrollView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ODScrollView-Info.plist"; sourceTree = "<group>"; };
 		1FFED60D67693E43ADD7F18C9494989C /* Pods-ODScrollView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ODScrollView_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		238BFB3A0CB2BB85DA895EF36F9C0810 /* Pods-ODScrollView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ODScrollView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		312B988EF117AE4DE76A268D970131FE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		3142C57258138EB513E72EC03C4667D4 /* AdjustmentDirection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AdjustmentDirection.swift; path = ODScrollView/Classes/AdjustmentDirection.swift; sourceTree = "<group>"; };
 		322CD478F97C303467380F3A732C42FE /* Pods-ODScrollView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ODScrollView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		38B46CB42CD68FB083BFAA69E9E6E5B7 /* Pods-ODScrollView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ODScrollView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		4353FE74757D6919FE6E0B3D12553771 /* ODScrollViewAdjustmentCalculator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ODScrollViewAdjustmentCalculator.swift; path = ODScrollView/Classes/ODScrollViewAdjustmentCalculator.swift; sourceTree = "<group>"; };
 		436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		43850D1D286697D4711A27D11FE51C21 /* ODScrollView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ODScrollView.framework; path = ODScrollView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		45B3982D4DAA7155E11EE0A5FDD7837A /* Pods-ODScrollView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ODScrollView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		4A38486A1CFD06333C5099F314EC453C /* AlwaysAllBottom.gif */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.gif; name = AlwaysAllBottom.gif; path = docs/GIFs/AlwaysAllBottom.gif; sourceTree = "<group>"; };
 		4F9930E31B9B6CD3824F9D6174AB22DE /* Pods-ODScrollView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ODScrollView_Tests-dummy.m"; sourceTree = "<group>"; };
-		5B3DBFF89150867EB9FEB82D359EA0F1 /* ODScrollView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ODScrollView-prefix.pch"; sourceTree = "<group>"; };
-		5B65D92B5735AFAF7FFE7D4DCE8F2F90 /* ODScrollViewOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ODScrollViewOptions.swift; path = ODScrollView/Classes/ODScrollViewOptions.swift; sourceTree = "<group>"; };
+		515B3274440A85FB0FB3D2934620EF95 /* ODScrollView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ODScrollView.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		5C7F92751755DE5A6A21589BA5549722 /* Pods-ODScrollView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ODScrollView_Tests.modulemap"; sourceTree = "<group>"; };
 		61A9593D4CC8B3C7D66B55EC1B433C37 /* Pods-ODScrollView_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ODScrollView_Example-umbrella.h"; sourceTree = "<group>"; };
-		694F401CA2CA078C49FF060679C1C2CF /* ODScrollView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ODScrollView.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		661E949BCAA1297633B398FE06858C97 /* ODScrollView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ODScrollView.debug.xcconfig; sourceTree = "<group>"; };
+		67177B7D8862FFFDACED91B14461F609 /* AlwaysAllTopDisabledResetting.gif */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.gif; name = AlwaysAllTopDisabledResetting.gif; path = docs/GIFs/AlwaysAllTopDisabledResetting.gif; sourceTree = "<group>"; };
+		6B9EF6E5934A1713E16C97F611BC6403 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		6E4790E4781B21DAE1C5A3390B38732F /* AlwaysAllTopDisabledTapAndResetting.gif */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.gif; name = AlwaysAllTopDisabledTapAndResetting.gif; path = docs/GIFs/AlwaysAllTopDisabledTapAndResetting.gif; sourceTree = "<group>"; };
 		7620F4A9996C3F445C2D2EFEB75BF637 /* Pods-ODScrollView_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ODScrollView_Example-frameworks.sh"; sourceTree = "<group>"; };
-		7661542CA8118D3A5382EFFDC9082F3B /* ODScrollViewRenderer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ODScrollViewRenderer.swift; path = ODScrollView/Classes/ODScrollViewRenderer.swift; sourceTree = "<group>"; };
-		7BBBEAE4F995298971B1EAB9F15D7B89 /* ODScrollViewDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ODScrollViewDelegate.swift; path = ODScrollView/Classes/ODScrollViewDelegate.swift; sourceTree = "<group>"; };
-		99CDB4B8BCF05A57F188C733286EEF98 /* Optional+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Optional+Extensions.swift"; path = "ODScrollView/Classes/Optional+Extensions.swift"; sourceTree = "<group>"; };
-		9A5DD77EE864EB9B3DCBB93A4EDF4F66 /* ODScrollView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ODScrollView.release.xcconfig; sourceTree = "<group>"; };
+		7D5BBBF87A4FFC56CE610092303E005D /* AlwaysBottomUITextViewsAndCenterUITextFieldsAndRest.gif */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.gif; name = AlwaysBottomUITextViewsAndCenterUITextFieldsAndRest.gif; path = docs/GIFs/AlwaysBottomUITextViewsAndCenterUITextFieldsAndRest.gif; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A2E3B900C7E61E69158D431D96372935 /* Optional+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Optional+Extensions.swift"; path = "ODScrollView/Classes/Optional+Extensions.swift"; sourceTree = "<group>"; };
 		A88482586E2969605D41D85DECFACD3F /* Pods-ODScrollView_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ODScrollView_Example-Info.plist"; sourceTree = "<group>"; };
-		B5128E6C54C140E17AB3DDD3ED0E7784 /* ODScrollView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ODScrollView.debug.xcconfig; sourceTree = "<group>"; };
-		B6968C6271413EF85489C537F27628AF /* ODScrollView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ODScrollView-dummy.m"; sourceTree = "<group>"; };
+		B065012760D6FAB848B8786749CAF5AA /* ODScrollView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ODScrollView.release.xcconfig; sourceTree = "<group>"; };
+		B1789CEB6EB41E1B0E5163EAA7AC7380 /* ODScrollViewOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ODScrollViewOptions.swift; path = ODScrollView/Classes/ODScrollViewOptions.swift; sourceTree = "<group>"; };
+		B7602DE6B78FB445342B857773A1D7DA /* ODScrollView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ODScrollView-prefix.pch"; sourceTree = "<group>"; };
+		BC5C44C460AD841F3913048507170606 /* IfNeededAllCenter.gif */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.gif; name = IfNeededAllCenter.gif; path = docs/GIFs/IfNeededAllCenter.gif; sourceTree = "<group>"; };
 		C02DBA07394586CC96704FDFE59CF452 /* Pods-ODScrollView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ODScrollView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		C2A7CC1306B3AAB510AAD1311EF020D7 /* Pods-ODScrollView_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ODScrollView_Tests-umbrella.h"; sourceTree = "<group>"; };
-		C519BAB0D928CB9BA2C93E9624245987 /* ODScrollViewAdjustmentCalculator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ODScrollViewAdjustmentCalculator.swift; path = ODScrollView/Classes/ODScrollViewAdjustmentCalculator.swift; sourceTree = "<group>"; };
-		C7425A594808488F4D93760D7460F420 /* KeyboardObserver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyboardObserver.swift; path = ODScrollView/Classes/KeyboardObserver.swift; sourceTree = "<group>"; };
 		CA4CD75F9C255FAF337CA07C9993F582 /* Pods_ODScrollView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ODScrollView_Example.framework; path = "Pods-ODScrollView_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CA58DC8DA31BA0A4E83DA5F377F922C9 /* ODScrollView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ODScrollView.swift; path = ODScrollView/Classes/ODScrollView.swift; sourceTree = "<group>"; };
+		CFB34DDFFB25C36FBA5E20F650A1D79D /* KeyboardObserver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyboardObserver.swift; path = ODScrollView/Classes/KeyboardObserver.swift; sourceTree = "<group>"; };
+		D6A4121FFC8CC798648A9848C1FB9983 /* ODScrollView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ODScrollView-umbrella.h"; sourceTree = "<group>"; };
+		DAA6D612AD2127E1842363E90D09C22A /* ODScrollViewDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ODScrollViewDelegate.swift; path = ODScrollView/Classes/ODScrollViewDelegate.swift; sourceTree = "<group>"; };
 		E09564D1B84279B06C68B578B319B51D /* Pods-ODScrollView_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ODScrollView_Tests-Info.plist"; sourceTree = "<group>"; };
+		E131243F75AF85B23DE7516FA6AB581F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		E17F0C3DFE861F97E4B238FC377B1942 /* Pods-ODScrollView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ODScrollView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		EAC2495AAAFBC02B28809F019D998540 /* ODScrollView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ODScrollView.modulemap; sourceTree = "<group>"; };
-		F149CF100ACB8A3913277153A168C8FC /* ODScrollView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ODScrollView-Info.plist"; sourceTree = "<group>"; };
 		F23BE8F199ED76DF6ED44A394CC183EE /* Pods-ODScrollView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ODScrollView_Example-dummy.m"; sourceTree = "<group>"; };
-		FAA6586BF379C0860DB755E771BF537C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		FB39C9348CD4BB42475EAF2A54E90ABB /* ODScrollView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ODScrollView-umbrella.h"; sourceTree = "<group>"; };
-		FB4ECF3019FABE13C75DF2236077539D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		FDD8A091E03917DB4FAFD00900D985B6 /* ODScrollView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ODScrollView.modulemap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,35 +126,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		03821035F0B5B4E8FB04080F210FD3A8 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				FAA6586BF379C0860DB755E771BF537C /* LICENSE */,
-				694F401CA2CA078C49FF060679C1C2CF /* ODScrollView.podspec */,
-				FB4ECF3019FABE13C75DF2236077539D /* README.md */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		042ADEE7C43B255026366E87C79D599A /* ODScrollView */ = {
-			isa = PBXGroup;
-			children = (
-				3142C57258138EB513E72EC03C4667D4 /* AdjustmentDirection.swift */,
-				10866C8963FE58A06D576AE6A733AA04 /* AdjustmentOption.swift */,
-				C7425A594808488F4D93760D7460F420 /* KeyboardObserver.swift */,
-				CA58DC8DA31BA0A4E83DA5F377F922C9 /* ODScrollView.swift */,
-				C519BAB0D928CB9BA2C93E9624245987 /* ODScrollViewAdjustmentCalculator.swift */,
-				7BBBEAE4F995298971B1EAB9F15D7B89 /* ODScrollViewDelegate.swift */,
-				5B65D92B5735AFAF7FFE7D4DCE8F2F90 /* ODScrollViewOptions.swift */,
-				7661542CA8118D3A5382EFFDC9082F3B /* ODScrollViewRenderer.swift */,
-				99CDB4B8BCF05A57F188C733286EEF98 /* Optional+Extensions.swift */,
-				03821035F0B5B4E8FB04080F210FD3A8 /* Pod */,
-				E88C9AD8124707D4250F1B5D4239F15E /* Support Files */,
-			);
-			name = ODScrollView;
-			path = ../..;
-			sourceTree = "<group>";
-		};
 		1613C423DA430DA23507C33260EB8582 /* Pods-ODScrollView_Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -186,9 +164,60 @@
 		62C33FC2222DDFBA627E1F4296AA35A9 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				042ADEE7C43B255026366E87C79D599A /* ODScrollView */,
+				80B4601A256BF845C8330B98285FD00D /* ODScrollView */,
 			);
 			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		72F3CDADF8C08526D82E1E4FBEEBE63B /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				4A38486A1CFD06333C5099F314EC453C /* AlwaysAllBottom.gif */,
+				09F0E40491F044E35B8FD306BE24BFA9 /* AlwaysAllBottomTrackCursor.gif */,
+				67177B7D8862FFFDACED91B14461F609 /* AlwaysAllTopDisabledResetting.gif */,
+				6E4790E4781B21DAE1C5A3390B38732F /* AlwaysAllTopDisabledTapAndResetting.gif */,
+				7D5BBBF87A4FFC56CE610092303E005D /* AlwaysBottomUITextViewsAndCenterUITextFieldsAndRest.gif */,
+				0FE9AD187F145D91B74DA5E831CB689C /* ExamplesForSettings.md */,
+				BC5C44C460AD841F3913048507170606 /* IfNeededAllCenter.gif */,
+				6B9EF6E5934A1713E16C97F611BC6403 /* LICENSE */,
+				515B3274440A85FB0FB3D2934620EF95 /* ODScrollView.podspec */,
+				E131243F75AF85B23DE7516FA6AB581F /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		80B4601A256BF845C8330B98285FD00D /* ODScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				0B43EDE4C2FF5CE362A7E05953B63468 /* AdjustmentDirection.swift */,
+				0A85EC2485B87B63880A8A5527063038 /* AdjustmentOption.swift */,
+				CFB34DDFFB25C36FBA5E20F650A1D79D /* KeyboardObserver.swift */,
+				194AB268119CD29181578A63456673A5 /* ODScrollView.swift */,
+				4353FE74757D6919FE6E0B3D12553771 /* ODScrollViewAdjustmentCalculator.swift */,
+				DAA6D612AD2127E1842363E90D09C22A /* ODScrollViewDelegate.swift */,
+				B1789CEB6EB41E1B0E5163EAA7AC7380 /* ODScrollViewOptions.swift */,
+				0701F8C3FD7EF276E04461A55799FE12 /* ODScrollViewRenderer.swift */,
+				A2E3B900C7E61E69158D431D96372935 /* Optional+Extensions.swift */,
+				72F3CDADF8C08526D82E1E4FBEEBE63B /* Pod */,
+				96810331C767AE355D2A91579DE06995 /* Support Files */,
+			);
+			name = ODScrollView;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		96810331C767AE355D2A91579DE06995 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FDD8A091E03917DB4FAFD00900D985B6 /* ODScrollView.modulemap */,
+				04736914A4A5F84BE97EC200B2709FAB /* ODScrollView-dummy.m */,
+				1A7EF55605A47018F0F11839C769BCC9 /* ODScrollView-Info.plist */,
+				B7602DE6B78FB445342B857773A1D7DA /* ODScrollView-prefix.pch */,
+				D6A4121FFC8CC798648A9848C1FB9983 /* ODScrollView-umbrella.h */,
+				661E949BCAA1297633B398FE06858C97 /* ODScrollView.debug.xcconfig */,
+				B065012760D6FAB848B8786749CAF5AA /* ODScrollView.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/ODScrollView";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -234,21 +263,6 @@
 				DB076EE6662ED50B1ACEE1D132C51B2F /* Pods-ODScrollView_Tests */,
 			);
 			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		E88C9AD8124707D4250F1B5D4239F15E /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				EAC2495AAAFBC02B28809F019D998540 /* ODScrollView.modulemap */,
-				B6968C6271413EF85489C537F27628AF /* ODScrollView-dummy.m */,
-				F149CF100ACB8A3913277153A168C8FC /* ODScrollView-Info.plist */,
-				5B3DBFF89150867EB9FEB82D359EA0F1 /* ODScrollView-prefix.pch */,
-				FB39C9348CD4BB42475EAF2A54E90ABB /* ODScrollView-umbrella.h */,
-				B5128E6C54C140E17AB3DDD3ED0E7784 /* ODScrollView.debug.xcconfig */,
-				9A5DD77EE864EB9B3DCBB93A4EDF4F66 /* ODScrollView.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/ODScrollView";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -577,6 +591,39 @@
 			};
 			name = Release;
 		};
+		7FB373E606670B5A0F823AF299A402C5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 661E949BCAA1297633B398FE06858C97 /* ODScrollView.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ODScrollView/ODScrollView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ODScrollView/ODScrollView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ODScrollView/ODScrollView.modulemap";
+				PRODUCT_MODULE_NAME = ODScrollView;
+				PRODUCT_NAME = ODScrollView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		81E62DE59EE55B03842664A31693B541 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 38B46CB42CD68FB083BFAA69E9E6E5B7 /* Pods-ODScrollView_Tests.debug.xcconfig */;
@@ -648,40 +695,6 @@
 			};
 			name = Release;
 		};
-		D05B75141DD7DE17B2AB3DD0DFA027E9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9A5DD77EE864EB9B3DCBB93A4EDF4F66 /* ODScrollView.release.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/ODScrollView/ODScrollView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ODScrollView/ODScrollView-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ODScrollView/ODScrollView.modulemap";
-				PRODUCT_MODULE_NAME = ODScrollView;
-				PRODUCT_NAME = ODScrollView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		F090CD07A80273D5A73C8EA19224ADDB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -742,9 +755,9 @@
 			};
 			name = Release;
 		};
-		FB9D56E578E6196B2978C6311BED669C /* Debug */ = {
+		FA53C317B15B22EEBAEE1C4782803BDD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B5128E6C54C140E17AB3DDD3ED0E7784 /* ODScrollView.debug.xcconfig */;
+			baseConfigurationReference = B065012760D6FAB848B8786749CAF5AA /* ODScrollView.release.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -768,12 +781,13 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 5.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
@@ -808,8 +822,8 @@
 		9B190C5150704CF4C6F07E6EED24B9E0 /* Build configuration list for PBXNativeTarget "ODScrollView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FB9D56E578E6196B2978C6311BED669C /* Debug */,
-				D05B75141DD7DE17B2AB3DD0DFA027E9 /* Release */,
+				7FB373E606670B5A0F823AF299A402C5 /* Debug */,
+				FA53C317B15B22EEBAEE1C4782803BDD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

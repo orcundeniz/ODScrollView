@@ -12,38 +12,40 @@ public protocol ODScrollViewDelegate: AnyObject {
     
     // MARK:- State Notifiers
 
+    /// #Optional
     ///
     /// Notifies when the keyboard showed.
     ///
-    /// - Parameter scrollView: TODO
+    /// - Parameter scrollView: The scroll-view object that is about to scroll the content view.
     func keyboardDidShow(by scrollView: ODScrollView)
 
-
+    /// #Optional
     ///
     /// Notifies before the UIScrollView adjustment.
     ///
-    /// - Parameter scrollView: TODO
+    /// - Parameter scrollView: The scroll-view object that is about to scroll the content view.
     func scrollAdjustmentWillBegin(by scrollView: ODScrollView)
     
-
+    /// #Optional
     ///
     /// Notifies after the UIScrollView adjustment.
     ///
-    /// - Parameter scrollView: TODO
+    /// - Parameter scrollView: The scroll-view object that is about to scroll the content view.
     func scrollAdjustmentDidEnd(by scrollView: ODScrollView)
 
-
+    /// #Optional
     ///
     /// Notifies when the keyboard hid.
     ///
-    /// - Parameter scrollView: TODO
+    /// - Parameter scrollView: The scroll-view object that is about to scroll the content view.
     func keyboardDidHide(by scrollView: ODScrollView)
     
     
     // MARK:- Adjustment Settings
 
+    /// #Optional
     ///
-    /// Adjusts the distance between keyboard and firstResponder view.
+    /// Specifies the margin between UITextInput and ODScrollView's top or bottom constraint depending on AdjustmentDirection
     ///
     /// ```
     ///     if let textField = textInput as? UITextField, textField == self.UITextField_inside_contentView {
@@ -53,8 +55,9 @@ public protocol ODScrollViewDelegate: AnyObject {
     ///     }
     /// ```
     /// - Parameters:
-    ///   - textInput: TODO
-    ///   - scrollView: TODO
+    ///   - textInput: The UITextInput that is about to adjust.
+    ///   - scrollView: The scroll-view object that is about to scroll the content view.
+    /// - Returns: *CGFloat* margin between UITextInput and ODScrollView's top or bottom constraint depending on AdjustmentDirection. Default is 20.
     func adjustmentMargin(for textInput: UITextInput, inside scrollView: ODScrollView) -> CGFloat
 
 
@@ -70,17 +73,19 @@ public protocol ODScrollViewDelegate: AnyObject {
     /// ```
     ///
     /// - Parameters:
-    ///   - textInput: TODO
-    ///   - scrollView: TODO
+    ///   - textInput: The UITextInput that is about to adjust.
+    ///   - scrollView: The scroll-view object that is about to scroll the content view.
+    /// - Returns: *AdjustmentDirection.* Default is .bottom
     func adjustmentDirection(for textInput: UITextInput, inside scrollView: ODScrollView) -> AdjustmentDirection
 
-
+    /// #Optional
     ///
-    /// Adjustment can be enabled/disabled for each UITextInput seperately. True by default.
+    /// Specifies that whether adjustment is enabled or not for each UITextInput seperately.
     ///
     /// - Parameters:
-    ///   - textInput: TODO
-    ///   - scrollView: TODO
+    ///   - textInput: The UITextInput that is about to adjust.
+    ///   - scrollView: The scroll-view object that is about to scroll the content view.
+    /// - Returns: *true* if adjustment is enabled for UITextInput; *false*  if adjustment is disabled for UITextInputs. Default is *true* for all UITextInputs.
     func adjustmentEnabled(for textInput: UITextInput, inside scrollView: ODScrollView) -> Bool
 
     
@@ -90,7 +95,8 @@ public protocol ODScrollViewDelegate: AnyObject {
     /// - always : ODScrollView always adjusts the UITextInput which is placed anywhere in the ODScrollView.
     /// - ifNeeded : ODScrollView only adjusts the UITextInput if it overlaps with the shown keyboard.
     ///
-    /// - Parameter scrollView: TODO
+    /// - Parameter scrollView: The scroll-view object that is about to scroll the content view.
+    /// - Returns: *AdjustmentOption.* Default is .always
     func adjustmentOption(for scrollView: ODScrollView) -> AdjustmentOption
 
 
@@ -108,20 +114,37 @@ public protocol ODScrollViewDelegate: AnyObject {
     ///```
     /// Beside above settings:
     ///
-    /// - Returning UIView from this, lets you to hide the keyboard by tapping the UIView you provide, and also be able to use isResettingAdjustmentEnabled(for scrollView: ODScrollView) setting.
+
+    /// #Optional
     ///
-    /// - If you return nil instead of UIView object, It means that hiding the keyboard by tapping is disabled.
-    ///
-    /// - Parameter scrollView: TODO
+    /// - Parameter scrollView: The scroll-view object that is about to scroll the content view.
+    /// - Returns: *UIView* from this, lets you to hide the keyboard by tapping the UIView you provide, and also be able to use isResettingAdjustmentEnabled(for scrollView: ODScrollView) setting.  If you return nil instead of UIView object, It means that hiding the keyboard by tapping is disabled. Default is nil
     func hideKeyboardByTappingToView(for scrollView: ODScrollView) -> UIView?
 
 
+    /// #Optional
+    ///
     /// Resets the scroll view offset - which is adjusted before - to beginning its position after keyboard hid by tapping to the provided UIView via hideKeyboardByTappingToView.
     ///
     /// ## IMPORTANT:
     /// This feature requires a UIView that is provided by hideKeyboardByTappingToView().
-    ///
-    /// - Parameter scrollView: TODO
+    /// 
+    /// - Parameter scrollView: The scroll-view object that is about to scroll the content view.
+    /// - Returns: *true* to enable resetting; *false* to disable resetting. Default is false.
     func isResettingAdjustmentEnabled(for scrollView: ODScrollView) -> Bool
+    
+}
+
+public extension ODScrollViewDelegate {
+    func keyboardDidShow(by scrollView: ODScrollView) {}
+    func scrollAdjustmentWillBegin(by scrollView: ODScrollView) {}
+    func scrollAdjustmentDidEnd(by scrollView: ODScrollView) {}
+    func keyboardDidHide(by scrollView: ODScrollView) {}
+    
+    func adjustmentMargin(for textInput: UITextInput, inside scrollView: ODScrollView) -> CGFloat { 20 }
+    func adjustmentEnabled(for textInput: UITextInput, inside scrollView: ODScrollView) -> Bool { true }
+
+    func hideKeyboardByTappingToView(for scrollView: ODScrollView) -> UIView? { nil }
+    func isResettingAdjustmentEnabled(for scrollView: ODScrollView) -> Bool { false }
     
 }
