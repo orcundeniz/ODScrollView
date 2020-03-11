@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ODScrollView'
-  s.version          = '0.1.5'
+  s.version          = '0.1.6'
   s.summary          = 'ODScrollView is a framework that moves editable text areas like UITextField and UITextView vertically depending on keyboard visibility.'
 
 # This description is used to generate tags and improve search results.
