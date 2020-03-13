@@ -60,7 +60,7 @@ ODScrollView is just a UIScrollView that automatically moves editable text areas
 
     use_frameworks!
     target 'MY_APP' do
-      pod 'ODScrollView', '~> 0.1'
+      pod 'ODScrollView'
     end
 
    Then run:
@@ -80,7 +80,7 @@ ODScrollView is just a UIScrollView that automatically moves editable text areas
        
    To integrate ODScrollView into your Xcode project using Carthage, specify it in your Cartfile:
     
-    github "orcundeniz/ODScrollView" >= 0.1
+    github "orcundeniz/ODScrollView"
    
   ## Usage
 
