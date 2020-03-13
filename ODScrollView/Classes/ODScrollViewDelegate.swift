@@ -74,7 +74,7 @@ public protocol ODScrollViewDelegate: AnyObject {
     func adjustmentDirection(for textInput: UITextInput, inside scrollView: ODScrollView) -> AdjustmentDirection
 
     ///
-    /// Specifies that whether adjustment is enabled or not for each UITextInput seperately.
+    /// Specifies that whether adjustment is enabled or not for each UITextInput separately.
     ///
     /// - Parameters:
     ///   - textInput: The UITextInput that is about to adjust.
@@ -83,7 +83,7 @@ public protocol ODScrollViewDelegate: AnyObject {
     func adjustmentEnabled(for textInput: UITextInput, inside scrollView: ODScrollView) -> Bool
 
     ///
-    /// There 2 types of adjustment option: Always and IfNeeded
+    /// There 2 types of adjustment option: .always and .ifNeeded
     ///
     /// - always : ODScrollView always adjusts the UITextInput which is placed anywhere in the ODScrollView.
     /// - ifNeeded : ODScrollView only adjusts the UITextInput if it overlaps with the shown keyboard.
@@ -138,5 +138,4 @@ public extension ODScrollViewDelegate {
 
     func hideKeyboardByTappingToView(for scrollView: ODScrollView) -> UIView? { nil }
     func isResettingAdjustmentEnabled(for scrollView: ODScrollView) -> Bool { false }
-    
 }

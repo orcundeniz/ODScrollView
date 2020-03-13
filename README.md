@@ -2,7 +2,7 @@
 [![Generic badge](https://img.shields.io/badge/Platform-iOS-green.svg)](https://github.com/orcundeniz/ODScrollView/) [![Generic badge](https://img.shields.io/badge/Language-Swift-red.svg)](https://developer.apple.com/swift/) [![Build Status](https://travis-ci.com/orcundeniz/ODScrollView.svg?branch=master)](https://travis-ci.com/orcundeniz/ODScrollView) [![Generic badge](https://cocoapod-badges.herokuapp.com/v/ODScrollView/badge.png)](https://cocoapods.org/pods/ODScrollView)
  [![Generic badge](https://img.shields.io/badge/Carthage-compatible-green.svg)](https://github.com/Carthage/Carthage) [![Generic badge](https://img.shields.io/badge/License-MIT-gray.svg)](https://github.com/orcundeniz/ODScrollView/blob/master/LICENSE)
 
-ODScrollView is a framework that automatically moves editable text areas like UITextField and UITextView vertically depending on keyboard visibility to offer better user experience.
+ODScrollView is just a UIScrollView that automatically moves editable text areas like UITextField and UITextView vertically depending on keyboard visibility to offer better user experience.
  
  ## Features
  * Automatically moves first responder UIViews that adopt the UITextInput protocol up/down when the keyboard appears/disappears, e.g., UITextField, UITextView, UISearchTextField or any custom UIView that adopts UITextInput protocol. 
