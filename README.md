@@ -60,7 +60,7 @@ ODScrollView is just a UIScrollView that automatically moves editable text areas
 
     use_frameworks!
     target 'MY_APP' do
-      pod 'ODScrollView'
+      pod 'ODScrollView' ~> '1.0'
     end
 
    Then run:
@@ -80,7 +80,21 @@ ODScrollView is just a UIScrollView that automatically moves editable text areas
        
    To integrate ODScrollView into your Xcode project using Carthage, specify it in your Cartfile:
     
-    github "orcundeniz/ODScrollView"
+    github "orcundeniz/ODScrollView" >= 1.0 
+    
+   ### Swift Package Manager
+   
+   The Swift Package Manager is a tool for automating the distribution of Swift code and is integrated into the swift compiler.
+
+   Once you have your Swift package set up, adding ODScrollView as a dependency is as easy as adding it to the dependencies value of your Package.swift.
+
+    dependencies: [
+        .Package(url: "https://github.com/orcundeniz/ODScrollView.git", majorVersion: 1)
+    ]
+    
+   OR, you can simply add in XCode:
+   
+     XCode -> File -> Swift Packages -> Add Package Dependency -> https://github.com/orcundeniz/ODScrollView.git
    
   ## Usage
 
