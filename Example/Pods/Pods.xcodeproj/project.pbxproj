@@ -8,23 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		0C67C1769452A4E1C4B678C4F7B23812 /* Pods-ODScrollView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 61A9593D4CC8B3C7D66B55EC1B433C37 /* Pods-ODScrollView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		14FCEE37270D66AA83805E2613739C38 /* Optional+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E3B900C7E61E69158D431D96372935 /* Optional+Extensions.swift */; };
-		1A3A2D1089852FBE2C8492AB34FFEB1E /* AdjustmentDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B43EDE4C2FF5CE362A7E05953B63468 /* AdjustmentDirection.swift */; };
 		21908C2062E36075AFDE5B0A9BEECD53 /* Pods-ODScrollView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C2A7CC1306B3AAB510AAD1311EF020D7 /* Pods-ODScrollView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		36EF81DD73C067E412313B4711C00A20 /* AdjustmentOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A85EC2485B87B63880A8A5527063038 /* AdjustmentOption.swift */; };
-		391DA0740776D4FC785DEC3FF4D90447 /* ODScrollView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 04736914A4A5F84BE97EC200B2709FAB /* ODScrollView-dummy.m */; };
+		2A0B6F80A87BB5A48037FC7BFFD4E646 /* ODScrollViewOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F89859FB3D7B13E21C8686FA5BBB166 /* ODScrollViewOptions.swift */; };
+		391DA0740776D4FC785DEC3FF4D90447 /* ODScrollView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 44566AEA057B7ED6C8E70D7EDFA763E3 /* ODScrollView-dummy.m */; };
+		4AC1559B9EC22616F092A9B87EE86621 /* ODScrollViewAdjustmentCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35811BE02251E5DBEBDE05775F101489 /* ODScrollViewAdjustmentCalculator.swift */; };
 		4FA334AE351FB53708B83160F8726ED5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
-		7289BE6B8524EB1089C59A9E961D1379 /* ODScrollViewRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0701F8C3FD7EF276E04461A55799FE12 /* ODScrollViewRenderer.swift */; };
+		6385711A44DCCC972B3FB1B39D90AC93 /* KeyboardObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC23622D4A1DA74D54455C595CF6271 /* KeyboardObserver.swift */; };
+		6BA456D81F3FB87F269EDDDCE9A207A9 /* ODScrollViewRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54443D604DC3B1F14EDA43E2A50BB1C2 /* ODScrollViewRenderer.swift */; };
 		73EE0307429830468EA11F03BE4ADDCE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
-		7805F78E9B00039E9DF10701F0F3E352 /* ODScrollViewOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1789CEB6EB41E1B0E5163EAA7AC7380 /* ODScrollViewOptions.swift */; };
 		7B294A263ACC3D59B46ED519B37AB558 /* Pods-ODScrollView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F9930E31B9B6CD3824F9D6174AB22DE /* Pods-ODScrollView_Tests-dummy.m */; };
-		851B7F8D402AB1773AC8065A1A6BEF73 /* ODScrollViewAdjustmentCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4353FE74757D6919FE6E0B3D12553771 /* ODScrollViewAdjustmentCalculator.swift */; };
+		7FB480EC89DB1AC06104DC2B64A89EE2 /* Optional+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A43782B8FB3F3BB40BC9BF300BC1C00 /* Optional+Extensions.swift */; };
 		854B960616474DC2CF1A9001327CDBD1 /* Pods-ODScrollView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F23BE8F199ED76DF6ED44A394CC183EE /* Pods-ODScrollView_Example-dummy.m */; };
-		A78D9783A74970A4F2B515094901BCC5 /* ODScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194AB268119CD29181578A63456673A5 /* ODScrollView.swift */; };
-		B4371971416DD7476984CDA41297C0FA /* KeyboardObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB34DDFFB25C36FBA5E20F650A1D79D /* KeyboardObserver.swift */; };
-		D57E4E54637EF8D25D52A58DF9CF3FB2 /* ODScrollViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA6D612AD2127E1842363E90D09C22A /* ODScrollViewDelegate.swift */; };
+		9B54D6AAEFAE5F3EB38EC8CF0EA2CA8E /* ODScrollViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB176A5F40629572BDE7805EF5001AB /* ODScrollViewDelegate.swift */; };
+		BB3B51421843473557354A708312FDE4 /* AdjustmentDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488BBA9DDDA2E8AEC676D2772342D0CD /* AdjustmentDirection.swift */; };
+		CB8F90A3C9C3B9EE191C6DDC268E7715 /* AdjustmentOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD16892420A71BF466A384D808956FD0 /* AdjustmentOption.swift */; };
+		CEDA1D7CD7B32AF23A4A6B4731602261 /* ODScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7224254895345E4CD3D724AB21D385E5 /* ODScrollView.swift */; };
 		EAE20FF4D2E33CF77556D3933B670E81 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */; };
-		F5C805214CF4157F872F7DC11424F7B7 /* ODScrollView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D6A4121FFC8CC798648A9848C1FB9983 /* ODScrollView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F5C805214CF4157F872F7DC11424F7B7 /* ODScrollView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F9AE485964604463B8948BA4FC1DBAC /* ODScrollView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA05B799007761B5D3017122CB45C2E7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 312B988EF117AE4DE76A268D970131FE /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,54 +47,54 @@
 
 /* Begin PBXFileReference section */
 		0148F08D3ED6DE3BED2A7BF1153D267B /* Pods-ODScrollView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ODScrollView_Example.modulemap"; sourceTree = "<group>"; };
-		04736914A4A5F84BE97EC200B2709FAB /* ODScrollView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ODScrollView-dummy.m"; sourceTree = "<group>"; };
-		0701F8C3FD7EF276E04461A55799FE12 /* ODScrollViewRenderer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ODScrollViewRenderer.swift; path = ODScrollView/Classes/ODScrollViewRenderer.swift; sourceTree = "<group>"; };
+		02C656C8D70872DB1A8EEFA29BDC1509 /* ODScrollView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ODScrollView-Info.plist"; sourceTree = "<group>"; };
+		04663D49C25602F2F8F131A6ED714703 /* ODScrollView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ODScrollView.release.xcconfig; sourceTree = "<group>"; };
 		07A1E9437F361D6AE8299A8686799A6F /* Pods_ODScrollView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ODScrollView_Tests.framework; path = "Pods-ODScrollView_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		09F0E40491F044E35B8FD306BE24BFA9 /* AlwaysAllBottomTrackCursor.gif */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.gif; name = AlwaysAllBottomTrackCursor.gif; path = docs/GIFs/AlwaysAllBottomTrackCursor.gif; sourceTree = "<group>"; };
-		0A85EC2485B87B63880A8A5527063038 /* AdjustmentOption.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AdjustmentOption.swift; path = ODScrollView/Classes/AdjustmentOption.swift; sourceTree = "<group>"; };
-		0B43EDE4C2FF5CE362A7E05953B63468 /* AdjustmentDirection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AdjustmentDirection.swift; path = ODScrollView/Classes/AdjustmentDirection.swift; sourceTree = "<group>"; };
-		0FE9AD187F145D91B74DA5E831CB689C /* ExamplesForSettings.md */ = {isa = PBXFileReference; includeInIndex = 1; name = ExamplesForSettings.md; path = docs/GIFs/ExamplesForSettings.md; sourceTree = "<group>"; };
 		1148312882E72B93CC76033AB89F7467 /* Pods-ODScrollView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ODScrollView_Example.release.xcconfig"; sourceTree = "<group>"; };
-		194AB268119CD29181578A63456673A5 /* ODScrollView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ODScrollView.swift; path = ODScrollView/Classes/ODScrollView.swift; sourceTree = "<group>"; };
-		1A7EF55605A47018F0F11839C769BCC9 /* ODScrollView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ODScrollView-Info.plist"; sourceTree = "<group>"; };
+		19578DE485A7EAB3FCE686B19F685D20 /* ODScrollView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ODScrollView.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		1B2033C102B5342E84610DCE6588308F /* ODScrollView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ODScrollView.modulemap; sourceTree = "<group>"; };
 		1FFED60D67693E43ADD7F18C9494989C /* Pods-ODScrollView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ODScrollView_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		238BFB3A0CB2BB85DA895EF36F9C0810 /* Pods-ODScrollView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ODScrollView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		297850F739E620660BDF51B7A6EECAF5 /* AlwaysAllBottomTrackCursor.gif */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.gif; name = AlwaysAllBottomTrackCursor.gif; path = docs/GIFs/AlwaysAllBottomTrackCursor.gif; sourceTree = "<group>"; };
 		312B988EF117AE4DE76A268D970131FE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		322CD478F97C303467380F3A732C42FE /* Pods-ODScrollView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ODScrollView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		35811BE02251E5DBEBDE05775F101489 /* ODScrollViewAdjustmentCalculator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ODScrollViewAdjustmentCalculator.swift; path = Sources/ODScrollView/Classes/ODScrollViewAdjustmentCalculator.swift; sourceTree = "<group>"; };
 		38B46CB42CD68FB083BFAA69E9E6E5B7 /* Pods-ODScrollView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ODScrollView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		4353FE74757D6919FE6E0B3D12553771 /* ODScrollViewAdjustmentCalculator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ODScrollViewAdjustmentCalculator.swift; path = ODScrollView/Classes/ODScrollViewAdjustmentCalculator.swift; sourceTree = "<group>"; };
+		3A43782B8FB3F3BB40BC9BF300BC1C00 /* Optional+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Optional+Extensions.swift"; path = "Sources/ODScrollView/Classes/Optional+Extensions.swift"; sourceTree = "<group>"; };
+		3B40036C860E77C2F969151FF4104CB0 /* ODScrollView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ODScrollView-prefix.pch"; sourceTree = "<group>"; };
 		436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		43850D1D286697D4711A27D11FE51C21 /* ODScrollView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ODScrollView.framework; path = ODScrollView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		44566AEA057B7ED6C8E70D7EDFA763E3 /* ODScrollView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ODScrollView-dummy.m"; sourceTree = "<group>"; };
 		45B3982D4DAA7155E11EE0A5FDD7837A /* Pods-ODScrollView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ODScrollView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		4A38486A1CFD06333C5099F314EC453C /* AlwaysAllBottom.gif */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.gif; name = AlwaysAllBottom.gif; path = docs/GIFs/AlwaysAllBottom.gif; sourceTree = "<group>"; };
+		488BBA9DDDA2E8AEC676D2772342D0CD /* AdjustmentDirection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AdjustmentDirection.swift; path = Sources/ODScrollView/Classes/AdjustmentDirection.swift; sourceTree = "<group>"; };
 		4F9930E31B9B6CD3824F9D6174AB22DE /* Pods-ODScrollView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ODScrollView_Tests-dummy.m"; sourceTree = "<group>"; };
-		515B3274440A85FB0FB3D2934620EF95 /* ODScrollView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ODScrollView.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		4F9AE485964604463B8948BA4FC1DBAC /* ODScrollView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ODScrollView-umbrella.h"; sourceTree = "<group>"; };
+		54443D604DC3B1F14EDA43E2A50BB1C2 /* ODScrollViewRenderer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ODScrollViewRenderer.swift; path = Sources/ODScrollView/Classes/ODScrollViewRenderer.swift; sourceTree = "<group>"; };
 		5C7F92751755DE5A6A21589BA5549722 /* Pods-ODScrollView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ODScrollView_Tests.modulemap"; sourceTree = "<group>"; };
+		5F89859FB3D7B13E21C8686FA5BBB166 /* ODScrollViewOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ODScrollViewOptions.swift; path = Sources/ODScrollView/Classes/ODScrollViewOptions.swift; sourceTree = "<group>"; };
+		60F074D2D73124A3057732DF760CFB08 /* ExamplesForSettings.md */ = {isa = PBXFileReference; includeInIndex = 1; name = ExamplesForSettings.md; path = docs/GIFs/ExamplesForSettings.md; sourceTree = "<group>"; };
 		61A9593D4CC8B3C7D66B55EC1B433C37 /* Pods-ODScrollView_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ODScrollView_Example-umbrella.h"; sourceTree = "<group>"; };
-		661E949BCAA1297633B398FE06858C97 /* ODScrollView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ODScrollView.debug.xcconfig; sourceTree = "<group>"; };
-		67177B7D8862FFFDACED91B14461F609 /* AlwaysAllTopDisabledResetting.gif */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.gif; name = AlwaysAllTopDisabledResetting.gif; path = docs/GIFs/AlwaysAllTopDisabledResetting.gif; sourceTree = "<group>"; };
-		6B9EF6E5934A1713E16C97F611BC6403 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		6E4790E4781B21DAE1C5A3390B38732F /* AlwaysAllTopDisabledTapAndResetting.gif */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.gif; name = AlwaysAllTopDisabledTapAndResetting.gif; path = docs/GIFs/AlwaysAllTopDisabledTapAndResetting.gif; sourceTree = "<group>"; };
+		6DB176A5F40629572BDE7805EF5001AB /* ODScrollViewDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ODScrollViewDelegate.swift; path = Sources/ODScrollView/Classes/ODScrollViewDelegate.swift; sourceTree = "<group>"; };
+		7224254895345E4CD3D724AB21D385E5 /* ODScrollView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ODScrollView.swift; path = Sources/ODScrollView/Classes/ODScrollView.swift; sourceTree = "<group>"; };
+		738D6DF6C5F5BB5D62D89D8D3FEB54F8 /* IfNeededAllCenter.gif */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.gif; name = IfNeededAllCenter.gif; path = docs/GIFs/IfNeededAllCenter.gif; sourceTree = "<group>"; };
 		7620F4A9996C3F445C2D2EFEB75BF637 /* Pods-ODScrollView_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ODScrollView_Example-frameworks.sh"; sourceTree = "<group>"; };
-		7D5BBBF87A4FFC56CE610092303E005D /* AlwaysBottomUITextViewsAndCenterUITextFieldsAndRest.gif */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.gif; name = AlwaysBottomUITextViewsAndCenterUITextFieldsAndRest.gif; path = docs/GIFs/AlwaysBottomUITextViewsAndCenterUITextFieldsAndRest.gif; sourceTree = "<group>"; };
+		86304BB48BDDB8C6040E3FE90027938B /* AlwaysAllTopDisabledTapAndResetting.gif */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.gif; name = AlwaysAllTopDisabledTapAndResetting.gif; path = docs/GIFs/AlwaysAllTopDisabledTapAndResetting.gif; sourceTree = "<group>"; };
+		8E3C321A43502B29ABE147676C9DC377 /* AlwaysBottomUITextViewsAndCenterUITextFieldsAndRest.gif */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.gif; name = AlwaysBottomUITextViewsAndCenterUITextFieldsAndRest.gif; path = docs/GIFs/AlwaysBottomUITextViewsAndCenterUITextFieldsAndRest.gif; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A2E3B900C7E61E69158D431D96372935 /* Optional+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Optional+Extensions.swift"; path = "ODScrollView/Classes/Optional+Extensions.swift"; sourceTree = "<group>"; };
 		A88482586E2969605D41D85DECFACD3F /* Pods-ODScrollView_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ODScrollView_Example-Info.plist"; sourceTree = "<group>"; };
-		B065012760D6FAB848B8786749CAF5AA /* ODScrollView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ODScrollView.release.xcconfig; sourceTree = "<group>"; };
-		B1789CEB6EB41E1B0E5163EAA7AC7380 /* ODScrollViewOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ODScrollViewOptions.swift; path = ODScrollView/Classes/ODScrollViewOptions.swift; sourceTree = "<group>"; };
-		B7602DE6B78FB445342B857773A1D7DA /* ODScrollView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ODScrollView-prefix.pch"; sourceTree = "<group>"; };
-		BC5C44C460AD841F3913048507170606 /* IfNeededAllCenter.gif */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.gif; name = IfNeededAllCenter.gif; path = docs/GIFs/IfNeededAllCenter.gif; sourceTree = "<group>"; };
+		AD16892420A71BF466A384D808956FD0 /* AdjustmentOption.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AdjustmentOption.swift; path = Sources/ODScrollView/Classes/AdjustmentOption.swift; sourceTree = "<group>"; };
+		B264DF636F9CBA9980A12A23BEDCD436 /* AlwaysAllBottom.gif */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.gif; name = AlwaysAllBottom.gif; path = docs/GIFs/AlwaysAllBottom.gif; sourceTree = "<group>"; };
+		B90AFDF99233EDE74B5B4285E734C10F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		BD1EF647E256445F04BA605C39059D47 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		C02DBA07394586CC96704FDFE59CF452 /* Pods-ODScrollView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ODScrollView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		C2A7CC1306B3AAB510AAD1311EF020D7 /* Pods-ODScrollView_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ODScrollView_Tests-umbrella.h"; sourceTree = "<group>"; };
 		CA4CD75F9C255FAF337CA07C9993F582 /* Pods_ODScrollView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ODScrollView_Example.framework; path = "Pods-ODScrollView_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CFB34DDFFB25C36FBA5E20F650A1D79D /* KeyboardObserver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyboardObserver.swift; path = ODScrollView/Classes/KeyboardObserver.swift; sourceTree = "<group>"; };
-		D6A4121FFC8CC798648A9848C1FB9983 /* ODScrollView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ODScrollView-umbrella.h"; sourceTree = "<group>"; };
-		DAA6D612AD2127E1842363E90D09C22A /* ODScrollViewDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ODScrollViewDelegate.swift; path = ODScrollView/Classes/ODScrollViewDelegate.swift; sourceTree = "<group>"; };
+		DC3F25C1ACAACE80876B8AA66DD77B7F /* AlwaysAllTopDisabledResetting.gif */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.gif; name = AlwaysAllTopDisabledResetting.gif; path = docs/GIFs/AlwaysAllTopDisabledResetting.gif; sourceTree = "<group>"; };
 		E09564D1B84279B06C68B578B319B51D /* Pods-ODScrollView_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ODScrollView_Tests-Info.plist"; sourceTree = "<group>"; };
-		E131243F75AF85B23DE7516FA6AB581F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		E17F0C3DFE861F97E4B238FC377B1942 /* Pods-ODScrollView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ODScrollView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		EBC23622D4A1DA74D54455C595CF6271 /* KeyboardObserver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyboardObserver.swift; path = Sources/ODScrollView/Classes/KeyboardObserver.swift; sourceTree = "<group>"; };
+		F1100B90B998201648640AB23C3175E3 /* ODScrollView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ODScrollView.debug.xcconfig; sourceTree = "<group>"; };
 		F23BE8F199ED76DF6ED44A394CC183EE /* Pods-ODScrollView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ODScrollView_Example-dummy.m"; sourceTree = "<group>"; };
-		FDD8A091E03917DB4FAFD00900D985B6 /* ODScrollView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ODScrollView.modulemap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +151,25 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		2B2D7D3D381CB921002D03E471C72FCF /* ODScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				488BBA9DDDA2E8AEC676D2772342D0CD /* AdjustmentDirection.swift */,
+				AD16892420A71BF466A384D808956FD0 /* AdjustmentOption.swift */,
+				EBC23622D4A1DA74D54455C595CF6271 /* KeyboardObserver.swift */,
+				7224254895345E4CD3D724AB21D385E5 /* ODScrollView.swift */,
+				35811BE02251E5DBEBDE05775F101489 /* ODScrollViewAdjustmentCalculator.swift */,
+				6DB176A5F40629572BDE7805EF5001AB /* ODScrollViewDelegate.swift */,
+				5F89859FB3D7B13E21C8686FA5BBB166 /* ODScrollViewOptions.swift */,
+				54443D604DC3B1F14EDA43E2A50BB1C2 /* ODScrollViewRenderer.swift */,
+				3A43782B8FB3F3BB40BC9BF300BC1C00 /* Optional+Extensions.swift */,
+				75FB9D98BB4CFDD7A37B21D1CB5B493A /* Pod */,
+				F088251E1DBFB19DA780A92CD816FA43 /* Support Files */,
+			);
+			name = ODScrollView;
+			path = ../..;
+			sourceTree = "<group>";
+		};
 		5D96C0BB60675F506FA47F9E3EEE248F /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -164,60 +183,26 @@
 		62C33FC2222DDFBA627E1F4296AA35A9 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				80B4601A256BF845C8330B98285FD00D /* ODScrollView */,
+				2B2D7D3D381CB921002D03E471C72FCF /* ODScrollView */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		72F3CDADF8C08526D82E1E4FBEEBE63B /* Pod */ = {
+		75FB9D98BB4CFDD7A37B21D1CB5B493A /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				4A38486A1CFD06333C5099F314EC453C /* AlwaysAllBottom.gif */,
-				09F0E40491F044E35B8FD306BE24BFA9 /* AlwaysAllBottomTrackCursor.gif */,
-				67177B7D8862FFFDACED91B14461F609 /* AlwaysAllTopDisabledResetting.gif */,
-				6E4790E4781B21DAE1C5A3390B38732F /* AlwaysAllTopDisabledTapAndResetting.gif */,
-				7D5BBBF87A4FFC56CE610092303E005D /* AlwaysBottomUITextViewsAndCenterUITextFieldsAndRest.gif */,
-				0FE9AD187F145D91B74DA5E831CB689C /* ExamplesForSettings.md */,
-				BC5C44C460AD841F3913048507170606 /* IfNeededAllCenter.gif */,
-				6B9EF6E5934A1713E16C97F611BC6403 /* LICENSE */,
-				515B3274440A85FB0FB3D2934620EF95 /* ODScrollView.podspec */,
-				E131243F75AF85B23DE7516FA6AB581F /* README.md */,
+				B264DF636F9CBA9980A12A23BEDCD436 /* AlwaysAllBottom.gif */,
+				297850F739E620660BDF51B7A6EECAF5 /* AlwaysAllBottomTrackCursor.gif */,
+				DC3F25C1ACAACE80876B8AA66DD77B7F /* AlwaysAllTopDisabledResetting.gif */,
+				86304BB48BDDB8C6040E3FE90027938B /* AlwaysAllTopDisabledTapAndResetting.gif */,
+				8E3C321A43502B29ABE147676C9DC377 /* AlwaysBottomUITextViewsAndCenterUITextFieldsAndRest.gif */,
+				60F074D2D73124A3057732DF760CFB08 /* ExamplesForSettings.md */,
+				738D6DF6C5F5BB5D62D89D8D3FEB54F8 /* IfNeededAllCenter.gif */,
+				BD1EF647E256445F04BA605C39059D47 /* LICENSE */,
+				19578DE485A7EAB3FCE686B19F685D20 /* ODScrollView.podspec */,
+				B90AFDF99233EDE74B5B4285E734C10F /* README.md */,
 			);
 			name = Pod;
-			sourceTree = "<group>";
-		};
-		80B4601A256BF845C8330B98285FD00D /* ODScrollView */ = {
-			isa = PBXGroup;
-			children = (
-				0B43EDE4C2FF5CE362A7E05953B63468 /* AdjustmentDirection.swift */,
-				0A85EC2485B87B63880A8A5527063038 /* AdjustmentOption.swift */,
-				CFB34DDFFB25C36FBA5E20F650A1D79D /* KeyboardObserver.swift */,
-				194AB268119CD29181578A63456673A5 /* ODScrollView.swift */,
-				4353FE74757D6919FE6E0B3D12553771 /* ODScrollViewAdjustmentCalculator.swift */,
-				DAA6D612AD2127E1842363E90D09C22A /* ODScrollViewDelegate.swift */,
-				B1789CEB6EB41E1B0E5163EAA7AC7380 /* ODScrollViewOptions.swift */,
-				0701F8C3FD7EF276E04461A55799FE12 /* ODScrollViewRenderer.swift */,
-				A2E3B900C7E61E69158D431D96372935 /* Optional+Extensions.swift */,
-				72F3CDADF8C08526D82E1E4FBEEBE63B /* Pod */,
-				96810331C767AE355D2A91579DE06995 /* Support Files */,
-			);
-			name = ODScrollView;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		96810331C767AE355D2A91579DE06995 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				FDD8A091E03917DB4FAFD00900D985B6 /* ODScrollView.modulemap */,
-				04736914A4A5F84BE97EC200B2709FAB /* ODScrollView-dummy.m */,
-				1A7EF55605A47018F0F11839C769BCC9 /* ODScrollView-Info.plist */,
-				B7602DE6B78FB445342B857773A1D7DA /* ODScrollView-prefix.pch */,
-				D6A4121FFC8CC798648A9848C1FB9983 /* ODScrollView-umbrella.h */,
-				661E949BCAA1297633B398FE06858C97 /* ODScrollView.debug.xcconfig */,
-				B065012760D6FAB848B8786749CAF5AA /* ODScrollView.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/ODScrollView";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -263,6 +248,21 @@
 				DB076EE6662ED50B1ACEE1D132C51B2F /* Pods-ODScrollView_Tests */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		F088251E1DBFB19DA780A92CD816FA43 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1B2033C102B5342E84610DCE6588308F /* ODScrollView.modulemap */,
+				44566AEA057B7ED6C8E70D7EDFA763E3 /* ODScrollView-dummy.m */,
+				02C656C8D70872DB1A8EEFA29BDC1509 /* ODScrollView-Info.plist */,
+				3B40036C860E77C2F969151FF4104CB0 /* ODScrollView-prefix.pch */,
+				4F9AE485964604463B8948BA4FC1DBAC /* ODScrollView-umbrella.h */,
+				F1100B90B998201648640AB23C3175E3 /* ODScrollView.debug.xcconfig */,
+				04663D49C25602F2F8F131A6ED714703 /* ODScrollView.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/ODScrollView";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -417,16 +417,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A3A2D1089852FBE2C8492AB34FFEB1E /* AdjustmentDirection.swift in Sources */,
-				36EF81DD73C067E412313B4711C00A20 /* AdjustmentOption.swift in Sources */,
-				B4371971416DD7476984CDA41297C0FA /* KeyboardObserver.swift in Sources */,
+				BB3B51421843473557354A708312FDE4 /* AdjustmentDirection.swift in Sources */,
+				CB8F90A3C9C3B9EE191C6DDC268E7715 /* AdjustmentOption.swift in Sources */,
+				6385711A44DCCC972B3FB1B39D90AC93 /* KeyboardObserver.swift in Sources */,
 				391DA0740776D4FC785DEC3FF4D90447 /* ODScrollView-dummy.m in Sources */,
-				A78D9783A74970A4F2B515094901BCC5 /* ODScrollView.swift in Sources */,
-				851B7F8D402AB1773AC8065A1A6BEF73 /* ODScrollViewAdjustmentCalculator.swift in Sources */,
-				D57E4E54637EF8D25D52A58DF9CF3FB2 /* ODScrollViewDelegate.swift in Sources */,
-				7805F78E9B00039E9DF10701F0F3E352 /* ODScrollViewOptions.swift in Sources */,
-				7289BE6B8524EB1089C59A9E961D1379 /* ODScrollViewRenderer.swift in Sources */,
-				14FCEE37270D66AA83805E2613739C38 /* Optional+Extensions.swift in Sources */,
+				CEDA1D7CD7B32AF23A4A6B4731602261 /* ODScrollView.swift in Sources */,
+				4AC1559B9EC22616F092A9B87EE86621 /* ODScrollViewAdjustmentCalculator.swift in Sources */,
+				9B54D6AAEFAE5F3EB38EC8CF0EA2CA8E /* ODScrollViewDelegate.swift in Sources */,
+				2A0B6F80A87BB5A48037FC7BFFD4E646 /* ODScrollViewOptions.swift in Sources */,
+				6BA456D81F3FB87F269EDDDCE9A207A9 /* ODScrollViewRenderer.swift in Sources */,
+				7FB480EC89DB1AC06104DC2B64A89EE2 /* Optional+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -593,7 +593,7 @@
 		};
 		7FB373E606670B5A0F823AF299A402C5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 661E949BCAA1297633B398FE06858C97 /* ODScrollView.debug.xcconfig */;
+			baseConfigurationReference = F1100B90B998201648640AB23C3175E3 /* ODScrollView.debug.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -757,7 +757,7 @@
 		};
 		FA53C317B15B22EEBAEE1C4782803BDD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B065012760D6FAB848B8786749CAF5AA /* ODScrollView.release.xcconfig */;
+			baseConfigurationReference = 04663D49C25602F2F8F131A6ED714703 /* ODScrollView.release.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
