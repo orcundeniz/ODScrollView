@@ -1,6 +1,6 @@
 # ODScrollView
 [![Generic badge](https://img.shields.io/badge/Platform-iOS-green.svg)](https://github.com/orcundeniz/ODScrollView/) [![Generic badge](https://img.shields.io/badge/Language-Swift-red.svg)](https://developer.apple.com/swift/) [![Build Status](https://travis-ci.com/orcundeniz/ODScrollView.svg?branch=master)](https://travis-ci.com/orcundeniz/ODScrollView) [![Generic badge](https://cocoapod-badges.herokuapp.com/v/ODScrollView/badge.png)](https://cocoapods.org/pods/ODScrollView)
- [![Generic badge](https://img.shields.io/badge/Carthage-compatible-green.svg)](https://github.com/Carthage/Carthage) [![Generic badge](https://img.shields.io/badge/License-MIT-gray.svg)](https://github.com/orcundeniz/ODScrollView/blob/master/LICENSE)
+ [![Generic badge](https://img.shields.io/badge/carthage-compatible-green.svg)](https://github.com/Carthage/Carthage) [![Generic badge](https://img.shields.io/badge/spm-compatible-green.svg)](https://github.com/Carthage/Carthage)[![Generic badge](https://img.shields.io/badge/License-MIT-gray.svg)](https://github.com/orcundeniz/ODScrollView/blob/master/LICENSE)
 
 ODScrollView is just a UIScrollView that automatically moves editable text areas like UITextField and UITextView vertically depending on keyboard visibility to offer better user experience.
  
@@ -60,7 +60,7 @@ ODScrollView is just a UIScrollView that automatically moves editable text areas
 
     use_frameworks!
     target 'MY_APP' do
-      pod 'ODScrollView' ~> '1.0'
+      pod 'ODScrollView', '~> 1.0'
     end
 
    Then run:
@@ -80,7 +80,7 @@ ODScrollView is just a UIScrollView that automatically moves editable text areas
        
    To integrate ODScrollView into your Xcode project using Carthage, specify it in your Cartfile:
     
-    github "orcundeniz/ODScrollView" >= 1.0 
+    github "orcundeniz/ODScrollView" ~> 1.0 
     
    ### Swift Package Manager
    
