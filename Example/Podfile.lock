@@ -1,5 +1,5 @@
 PODS:
-  - ODScrollView (0.1.5)
+  - ODScrollView (0.1.8)
 
 DEPENDENCIES:
   - ODScrollView (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  ODScrollView: a17d4f37f5f97eeb211b5e88bd250c631c0ddf6e
+  ODScrollView: 5d4774aad71fcb74748dabfd6697f66e1b60313e
 
 PODFILE CHECKSUM: dc8f04f6de749f38d5b5bf1072a492ea8b70d5f3
 
