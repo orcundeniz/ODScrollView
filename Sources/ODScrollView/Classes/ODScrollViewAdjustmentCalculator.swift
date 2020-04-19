@@ -30,7 +30,7 @@ final class ODScrollViewAdjustmentCalculator {
             else { return false }
 
             // Adjustment is enabled if the inputView stays under keyboard.
-            return inputViewMaxYGlobal >= keyboardMinYGlobal ? true : false
+            return inputViewMaxYGlobal >= keyboardMinYGlobal
         }
     }
     

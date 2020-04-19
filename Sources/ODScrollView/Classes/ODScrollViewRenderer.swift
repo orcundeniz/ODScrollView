@@ -15,7 +15,7 @@ final class ODScrollViewRenderer {
     private var beforeAdjustmentContentOffsetY: CGFloat = 0
     private var keyboardHeight: CGFloat = 0
 
-    private weak var scrollView: ODScrollView?
+    private weak var scrollView: ODScrollView!
    
     public var firstResponderUITextInputView: UIView?
     
@@ -185,6 +185,7 @@ final class ODScrollViewRenderer {
         for subView in view.subviews where !(firstResponderUITextInputView^!=?) {
             if subView is UITextInput, subView.isFirstResponder {
                 firstResponderUITextInputView = subView
+                return
             } else {
                 setFirstResponderView(view: subView)
             }
