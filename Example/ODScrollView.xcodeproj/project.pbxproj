@@ -16,6 +16,7 @@
 		BA47EEB6241597F90060DB5B /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA47EEB3241597F90060DB5B /* MenuViewController.swift */; };
 		BA47EEB7241597F90060DB5B /* TextCursorTrackingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA47EEB4241597F90060DB5B /* TextCursorTrackingViewController.swift */; };
 		BA5907BA2415A2ED0039E614 /* ODScrollViewAdjustmentCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA47EEB0241597820060DB5B /* ODScrollViewAdjustmentCalculatorTests.swift */; };
+		BAC86141245F0990009F5B54 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BAC86140245F0990009F5B54 /* Info.plist */; };
 		BFC0451363281D95AB3A6663 /* Pods_ODScrollView_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA471BE665F614E00614D74C /* Pods_ODScrollView_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,13 +44,13 @@
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* ODScrollView_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ODScrollView_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8992C259A4BFA8E475FA5AF4 /* Pods-ODScrollView_Example-ODScrollView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ODScrollView_Example-ODScrollView_Tests.debug.xcconfig"; path = "Target Support Files/Pods-ODScrollView_Example-ODScrollView_Tests/Pods-ODScrollView_Example-ODScrollView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		BA471BE665F614E00614D74C /* Pods_ODScrollView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ODScrollView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA47EEB0241597820060DB5B /* ODScrollViewAdjustmentCalculatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ODScrollViewAdjustmentCalculatorTests.swift; path = ../../Tests/ODScrollViewTests/ODScrollViewAdjustmentCalculatorTests.swift; sourceTree = "<group>"; };
 		BA47EEB2241597F90060DB5B /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		BA47EEB3241597F90060DB5B /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		BA47EEB4241597F90060DB5B /* TextCursorTrackingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextCursorTrackingViewController.swift; sourceTree = "<group>"; };
+		BAC86140245F0990009F5B54 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../../Tests/ODScrollViewTests/Info.plist; sourceTree = "<group>"; };
 		BB4D8F622F88972F31560DDE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		CA01839CB0FABE85817AACCE /* Pods-ODScrollView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ODScrollView_Example.debug.xcconfig"; path = "Target Support Files/Pods-ODScrollView_Example/Pods-ODScrollView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		E3B2ADE3F56D3E3DA5675331 /* Pods-ODScrollView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ODScrollView_Example.release.xcconfig"; path = "Target Support Files/Pods-ODScrollView_Example/Pods-ODScrollView_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -141,7 +142,7 @@
 		607FACE91AFB9204008FA782 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				607FACEA1AFB9204008FA782 /* Info.plist */,
+				BAC86140245F0990009F5B54 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -255,6 +256,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAC86141245F0990009F5B54 /* Info.plist in Resources */,
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
