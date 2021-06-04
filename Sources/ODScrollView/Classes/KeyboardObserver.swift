@@ -7,7 +7,7 @@
 //
 import UIKit
 
-protocol KeyboardObserver: class {
+protocol KeyboardObserver: AnyObject {
     func keyboardDidShow(with keyboardHeight: CGFloat)
     func keyboardDidHide()
 }

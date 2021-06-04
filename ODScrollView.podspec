@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ODScrollView'
-  s.version          = '1.0.3'
+  s.version          = '1.0.4'
   s.summary          = 'ODScrollView is a UIScrollView that moves editable text areas like UITextField and UITextView vertically depending on keyboard visibility.'
 
 # This description is used to generate tags and improve search results.
@@ -27,7 +27,7 @@ Pod::Spec.new do |s|
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '12.0'
-  s.swift_version = ['5.0', '5.1', '5.2']
+  s.swift_version = ['5.0', '5.1', '5.2', '5.3', '5.4']
   s.source_files = 'Sources/ODScrollView/Classes/**/*'
   s.frameworks = 'UIKit'
   # s.resource_bundles = {
